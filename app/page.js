@@ -1,103 +1,138 @@
-import Image from "next/image";
+"use client"
 
-export default function Home() {
-  return (
-    <div className="font-sans grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20">
-      <main className="flex flex-col gap-[32px] row-start-2 items-center sm:items-start">
+
+
+import { Carousel2 } from "@/components/carousel2";
+import { Navbar } from "@/components/Navbar";
+import Image from "next/image"
+
+
+export default function Home () {
+      return (
+             <main>
+        <h1 className="text-3xl text-center text-yellow-300 p-8 font-bold lg:text-5xl lg:text-black">Our Projects</h1>
+        <div className=" lg:flex">
+        <div className="h-100 w-85 mt-3 shadow rounded-2xl ml-3 relative lg:w-110 lg:mt-0">
         <Image
-          className="dark:invert"
-          src="/next.svg"
-          alt="Next.js logo"
-          width={180}
-          height={38}
-          priority
-        />
-        <ol className="font-mono list-inside list-decimal text-sm/6 text-center sm:text-left">
-          <li className="mb-2 tracking-[-.01em]">
-            Get started by editing{" "}
-            <code className="bg-black/[.05] dark:bg-white/[.06] font-mono font-semibold px-1 py-0.5 rounded">
-              app/page.js
-            </code>
-            .
-          </li>
-          <li className="tracking-[-.01em]">
-            Save and see your changes instantly.
-          </li>
-        </ol>
+        width={80}
+        height={80}
+        src={"/Shouse1.jpg"}
+        alt="1"
+        className="w-110 h-60 rounded-t-2xl"/>
+        <h1 className="font-bold text-2xl p-5">Bold Living 1</h1>
+        <h1 className="text-sm ml-5">Alpha Beach Road Lekki</h1>
+        <strong className="ml-5">Available Unit: 2bedroom</strong>
+        <p className="text-sm text-white border p-2 bg-red-800 rounded -lg w-20 font-bold absolute top-5 right-6">Sold Out</p>
+      </div>
+     <div className="h-100 w-85 mt-3 shadow rounded-2xl ml-3 relative lg:w-110 lg:mt-0">
+        <Image
+        width={80}
+        height={80}
+        src={"/shouse2.png"}
+        alt="1"
+        className="w-110 h-60 rounded-t-2xl"/>
+        <h1 className="font-bold text-2xl p-5">Bold Living 2</h1>
+        <h1 className="text-sm ml-5">Alpha Beach Road Lekki</h1>
+        <strong className="ml-5">Available Unit: 4bedroom</strong>
+        <p className="text-sm text-white border p-2 bg-red-800 rounded -lg w-20 font-bold absolute top-5 right-6">Sold Out</p>
+      </div>
+      <div className="h-100 w-85 mt-3 shadow rounded-2xl ml-3 relative lg:w-110 lg:mt-0">
+        <Image
+        width={80}
+        height={80}
+        src={"/Shouse3.png"}
+        alt="1"
+        className="w-110 h-60 rounded-t-2xl"/>
+        <h1 className="font-bold text-2xl p-5">Bold Living 5</h1>
+        <h1 className="text-sm ml-5">Alpha Beach Road Lekki</h1>
+        <strong className="ml-5">Available Unit: 6bedroom</strong>
+        <p className="text-sm text-white border p-2 bg-green-800 rounded -lg w-25 font-bold absolute top-5 right-6">Still Selling</p>
+      </div>
+      </div>
+       <h1 className="text-sm text-center font-bold border-3 mx-27 mt-2 p-3 rounded-lg lg:mx-140">See More</h1>
+      <div className="mt-3 ml-10 lg:flex lg:gap-8 lg:ml-5">
+       <div className="relative shadow h-90 w-70 rounded-2xl">
+        <Image
+        width={320}
+        height={30}
+        src={"/Sale1.jpeg"}
+        alt="1"
+        className="rounded-t-2xl"/>
+        <h1 className="font-bold">Available Unit: 8</h1>
+        <h1  className="font-bold">5 Bedroom Duplex 🏡, Plus: wide range parking lot 🚗 & gymnastic center🏋️‍♀️   </h1>
+        <h1 className="text-sm mt-9 text-center shadow rounded-lg mx-15 p-1 bg-yellow-300 font-bold">Click Here To Chat With Agent</h1>
+      <h1 className="absolute top-3 right-4 rounded-lg p-1 bg-yellow-300 font-bold shadow">60 Million Naira</h1>
+      </div> 
+      <div className="relative mt-4 shadow h-90 w-70 rounded-2xl lg:mt-0">
+        <Image
+        width={320}
+        height={30}
+        src={"/Sale2.jpg"}
+        alt="1"
+        className="rounded-t-2xl"/>
+        <h1 className="font-bold">Available Unit: 1</h1>
+        <h1  className="font-bold">4 Bedroom Bungalow 🏡, Plus: mini range parking lot 🚗&swimming pool   </h1>
+        <h1 className="text-sm mt-6 text-center shadow rounded-lg mx-15 p-1 bg-yellow-300 font-bold">Click Here To Chat With Agent</h1>
+      <h1 className="absolute top-3 right-4 rounded-lg p-1 bg-yellow-300 font-bold shadow">30 Million Naira</h1>
+      </div> 
+      <div className="relative shadow mt-4 h-90 w-70 rounded-2xl lg:mt-0">
+        <Image
+        width={320}
+        height={30}
+        src={"/Sale3.jpg"}
+        alt="1"
+        className="rounded-t-2xl"/>
+        <h1 className="font-bold">Available Unit: 1</h1>
+        <h1  className="font-bold">5 Bedroom Duplex 🏡, Plus: Normal range parking lot 🚗</h1>
+        <h1 className="text-sm mt-10 text-center shadow rounded-lg mx-15 p-1 bg-yellow-300 font-bold">Click Here To Chat With Agent</h1>
+      <h1 className="absolute top-3 right-4 rounded-lg p-1 bg-yellow-300 font-bold shadow">40 Million Naira</h1>
+      </div> 
+      <div className="relative shadow mt-4 h-90 w-70 rounded-2xl lg:mt-0">
+        <Image
+        width={320}
+        height={30}
+        src={"/Sale4.jpg"}
+        alt="1"
+        className="rounded-t-2xl"/>
+        <h1 className="font-bold">Available Unit: 4</h1>
+        <h1  className="font-bold">4 Bedroom Bungalow 🏡, Plus: wide range parking lot 🚗</h1>
+        <h1 className="text-sm mt-7 text-center shadow rounded-lg mx-15 p-1 bg-yellow-300 font-bold">Click Here To Chat With Agent</h1>
+      <h1 className="absolute top-3 right-4 rounded-lg p-1 bg-yellow-300 font-bold shadow">25 Million Naira</h1>
+      </div> 
+      </div>
+      <Carousel2/>
 
-        <div className="flex gap-4 items-center flex-col sm:flex-row">
-          <a
-            className="rounded-full border border-solid border-transparent transition-colors flex items-center justify-center bg-foreground text-background gap-2 hover:bg-[#383838] dark:hover:bg-[#ccc] font-medium text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 sm:w-auto"
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Image
-              className="dark:invert"
-              src="/vercel.svg"
-              alt="Vercel logomark"
-              width={20}
-              height={20}
-            />
-            Deploy now
-          </a>
-          <a
-            className="rounded-full border border-solid border-black/[.08] dark:border-white/[.145] transition-colors flex items-center justify-center hover:bg-[#f2f2f2] dark:hover:bg-[#1a1a1a] hover:border-transparent font-medium text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 w-full sm:w-auto md:w-[158px]"
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Read our docs
-          </a>
-        </div>
-      </main>
-      <footer className="row-start-3 flex gap-[24px] flex-wrap items-center justify-center">
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/file.svg"
-            alt="File icon"
-            width={16}
-            height={16}
-          />
-          Learn
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/window.svg"
-            alt="Window icon"
-            width={16}
-            height={16}
-          />
-          Examples
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/globe.svg"
-            alt="Globe icon"
-            width={16}
-            height={16}
-          />
-          Go to nextjs.org →
-        </a>
-      </footer>
-    </div>
-  );
+      <div className="flex space-x-4 overflow-x-auto scrollbar-hide p-4">
+  <div className="min-w-[150px] h-24 bg-blue-500 text-white flex items-center justify-center rounded-lg">Salesforce</div>
+  <div className="min-w-[150px] h-24 bg-blue-500 text-white flex items-center justify-center rounded-lg">Salesforce</div>
+  <div className="min-w-[150px] h-24 bg-blue-500 text-white flex items-center justify-center rounded-lg">Salesforce</div>
+  <div className="min-w-[150px] h-24 bg-blue-500 text-white flex items-center justify-center rounded-lg">Salesforce</div>
+  <div className="min-w-[150px] h-24 bg-blue-500 text-white flex items-center justify-center rounded-lg">Salesforce</div>
+  <div className="min-w-[150px] h-24 bg-green-500 text-white flex items-center justify-center rounded-lg">Google Calendar</div>
+  <div className="min-w-[150px] h-24 bg-purple-500 text-white flex items-center justify-center rounded-lg">Zoom</div>
+  <div className="min-w-[150px] h-24 bg-orange-500 text-white flex items-center justify-center rounded-lg">Slack</div>
+  <div className="min-w-[150px] h-24 bg-red-500 text-white flex items-center justify-center rounded-lg">PayPal</div>
+  <div className="min-w-[150px] h-24 bg-red-500 text-white flex items-center justify-center rounded-lg">PayPal</div>
+  <div className="min-w-[150px] h-24 bg-red-500 text-white flex items-center justify-center rounded-lg">PayPal</div>
+  <div className="min-w-[150px] h-24 bg-red-500 text-white flex items-center justify-center rounded-lg">PayPal</div>
+  <div className="min-w-[150px] h-24 bg-red-500 text-white flex items-center justify-center rounded-lg">PayPal</div>
+  <div className="min-w-[150px] h-24 bg-red-500 text-white flex items-center justify-center rounded-lg">PayPal</div>
+  <div className="min-w-[150px] h-24 bg-red-500 text-white flex items-center justify-center rounded-lg">PayPal</div>
+  <div className="min-w-[150px] h-24 bg-red-500 text-white flex items-center justify-center rounded-lg">PayPal</div>
+  <div className="min-w-[150px] h-24 bg-red-500 text-white flex items-center justify-center rounded-lg">PayPal</div>
+  <div className="min-w-[150px] h-24 bg-red-500 text-white flex items-center justify-center rounded-lg">PayPal</div>
+  <div className="min-w-[150px] h-24 bg-red-500 text-white flex items-center justify-center rounded-lg">PayPal</div>
+  <div className="min-w-[150px] h-24 bg-red-500 text-white flex items-center justify-center rounded-lg">PayPal</div>
+  <div className="min-w-[150px] h-24 bg-red-500 text-white flex items-center justify-center rounded-lg">PayPal</div>
+  <div className="min-w-[150px] h-24 bg-red-500 text-white flex items-center justify-center rounded-lg">PayPal</div>
+  <div className="min-w-[150px] h-24 bg-red-500 text-white flex items-center justify-center rounded-lg">PayPal</div>
+  <div className="min-w-[150px] h-24 bg-red-500 text-white flex items-center justify-center rounded-lg">PayPal</div>
+  <div className="min-w-[150px] h-24 bg-red-500 text-white flex items-center justify-center rounded-lg">PayPal</div>
+  <div className="min-w-[150px] h-24 bg-red-500 text-white flex items-center justify-center rounded-lg">PayPal</div>
+</div>
+
+</main>
+  
+);
 }
+   
