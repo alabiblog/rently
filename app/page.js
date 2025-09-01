@@ -1,15 +1,94 @@
 "use client"
-
-
-
-import { Carousel2 } from "@/components/carousel2";
-import { Navbar } from "@/components/Navbar";
+import { Swiper,SwiperSlide } from "swiper/react";
+import "swiper/css"
+import "swiper/css/pagination"
+import { Pagination,Autoplay } from "swiper/modules";
 import Image from "next/image"
 
 
 export default function Home () {
       return (
              <main>
+              
+
+       <Swiper
+       modules={[Autoplay,Pagination]}
+       autoplay={{
+         display: 3000,
+         disableOnInteraction: false
+       }}
+       pagination={{clickable: true}}
+       loop={true}
+       speed={1}
+      
+       className="mySwiper w-full h-[400px] lg:h-[600px] cursor-grab">
+         
+        
+      
+        <SwiperSlide className="w-full h-full relative">
+         <Image
+         src={"/imagehouse11.jpg"}
+         alt="2"
+         fill/>
+         <div className="absolute  bottom-10 left-5 lg:left-15">
+           <h1 className="text-2xl text-white font-bold lg:text-4xl">A House To Suit<br/>Your LifeStyle</h1>
+         </div>
+         <div className="absolute left-5 bottom-30 lg:bottom-8 lg:left-120">
+           <h1 className="text-white text-sm font-bold">Lifestyle is a place that compliment<br/>your daily routine and hobbies it<br/>provides, the spaces functionality....</h1>
+         </div>
+        <div className="absolute bottom-15 right-10 lg:right-15 rounded-2xl">
+         <button className="border p-1 bg-red-700  font-bold text-white lg:p-2">Learn More</button>
+        </div>
+        </SwiperSlide>
+        <SwiperSlide className="w-full h-full">
+         <Image
+         src={"/imageman22.jpeg"}
+         alt="2"
+         fill/>
+         <div className="absolute bottom-10 left-5 lg:left-15">
+           <h1 className="text-2xl text-white font-bold lg:text-4xl">Own Your Own Home<br/>With Ease</h1>
+         </div>
+         <div className="absolute bottom-30 left-5 lg:bottom-8 lg:left-120">
+           <h1 className="text-white font-bold">Make your dream home a reality-<br/>Simple, Stress-Free and Yours!</h1>
+         </div>
+        <div className="absolute bottom-15 right-10 lg:right-15">
+         <button className="border p-2 bg-red-700 font-bold text-white">Learn More</button>
+        </div>
+        </SwiperSlide>
+        <SwiperSlide className="w-full h-full">
+         <Image
+         src={"/imageman11.jpg"}
+         alt="2"
+         fill/>
+         <div className="absolute bottom-10 left-5 lg:left-15">
+           <h1 className="text-2xl text-white font-bold lg:text-4xl">Bold Living<br/>Series</h1>
+         </div>
+         <div className="absolute bottom-30 left-5 lg:bottom-8 lg:left-120">
+           <h1 className="text-white font-bold">Transform your life with the Bold<br/>Living Series</h1>
+         </div>
+        <div className="absolute bottom-15 right-10 lg:right-15">
+        <button className="border p-2 bg-red-700 font-bold text-white">Learn More</button>
+        </div>
+        </SwiperSlide>
+        <SwiperSlide className="w-full h-full">
+         <Image
+         src={"/image33.jpg"}
+         alt="2"
+         fill/>
+         <div className="absolute bottom-10 left-5 lg:left-15">
+           <h1 className="text-2xl text-white font-bold lg:text-4xl">Simplify Real<br/>Estate Investment</h1>
+         </div>
+         <div className="absolute bottom-30 left-5 lg:bottom-8 lg:left-120">
+           <h1 className="text-white font-bold">Build your dream,secure your<br/>future!"</h1>
+         </div>
+        <div className="absolute bottom-15 right-10 lg:right-15">
+         <button className="border p-2 bg-red-700 font-bold text-white">Learn More</button>
+        </div>
+            
+        </SwiperSlide>
+       </Swiper>
+      
+
         <h1 className="text-3xl text-center text-yellow-300 p-8 font-bold lg:text-5xl lg:text-black">Our Projects</h1>
         <div className=" lg:flex">
         <div className="h-100 w-85 mt-3 shadow rounded-2xl ml-3 relative lg:w-110 lg:mt-0">
@@ -100,37 +179,39 @@ export default function Home () {
       <h1 className="absolute top-3 right-4 rounded-lg p-1 bg-yellow-300 font-bold shadow">25 Million Naira</h1>
       </div> 
       </div>
-      <Carousel2/>
+      <div className="flex overflow-x-auto  p-4   mt-2 rounded w-full bg-gray-200 h-30 w-full">
+       <div className="flex gap-5">
+          <Image height={300} width={300} src={"/slide1.webp"} alt="1" className="rounded  shadow  hover:shadow-black hover:border-3" />
+          <Image height={300} width={300} src={"/slide1.webp"} alt="1" className="rounded shadow hover:shadow-black hover:border-3"/>
+          <Image height={300} width={300} src={"/slide1.webp"} alt="1" className="rounded shadow hover:shadow-black hover:border-3"/>
+          <Image height={300} width={300} src={"/slide1.webp"} alt="1" className="rounded shadow hover:shadow-black hover:border-3"/>
+          <Image height={300} width={300} src={"/slide1.webp"} alt="1" className="rounded shadow hover:shadow-black hover:border-3"/>
+          <Image height={300} width={300} src={"/slide1.webp"} alt="1" className="rounded shadow hover:shadow-black hover:border-3"/>
+          <Image height={300} width={300} src={"/slide1.webp"} alt="1" className="rounded shadow hover:shadow-black hover:border-3"/>
+          <Image height={300} width={300} src={"/slide1.webp"} alt="1" className="rounded shadow hover:shadow-black hover:border-3"/>
+          <Image height={300} width={300} src={"/slide1.webp"} alt="1" className="rounded shadow hover:shadow-black hover:border-3"/>
+          <Image height={300} width={300} src={"/slide1.webp"} alt="1" className="rounded shadow hover:shadow-black hover:border-3"/>
+          <Image height={300} width={300} src={"/slide1.webp"} alt="1" className="rounded shadow hover:shadow-black hover:border-3"/>
+          <Image height={300} width={300} src={"/slide1.webp"} alt="1" className="rounded shadow hover:shadow-black hover:border-3"/>
+          <Image height={300} width={300} src={"/slide1.webp"} alt="1" className="rounded shadow hover:shadow-black hover:border-3"/>
+          <Image height={300} width={300} src={"/slide1.webp"} alt="1" className="rounded shadow hover:shadow-black hover:border-3"/>
+          <Image height={300} width={300} src={"/slide1.webp"} alt="1" className="rounded shadow hover:shadow-black hover:border-3"/>
+          <Image height={300} width={300} src={"/slide1.webp"} alt="1" className="rounded shadow hover:shadow-black hover:border-3 "/>
+          <Image height={300} width={300} src={"/slide1.webp"} alt="1" className="rounded shadow hover:shadow-black hover:border-3"/>
+          <Image height={300} width={300} src={"/slide1.webp"} alt="1" className="rounded shadow hover:shadow-black hover:border-3"/>
+          <Image height={300} width={300} src={"/slide1.webp"} alt="1" className="rounded shadow hover:shadow-black hover:border-3"/>
+          <Image height={300} width={300} src={"/slide1.webp"} alt="1" className="rounded shadow hover:shadow-black hover:border-3"/>
+          <Image height={300} width={300} src={"/slide1.webp"} alt="1" className="rounded shadow hover:shadow-black hover:border-3"/>
+          <Image height={300} width={300} src={"/slide1.webp"} alt="1" className="rounded shadow hover:shadow-black hover:border-3"/>
+          <Image height={300} width={300} src={"/slide1.webp"} alt="1" className="rounded shadow hover:shadow-black hover:border-3"/>
+          <Image height={300} width={300} src={"/slide1.webp"} alt="1" className="rounded shadow hover:shadow-black hover:border-3"/>
+          <Image height={300} width={300} src={"/slide1.webp"} alt="1" className="rounded  shadow hover:shadow-black hover:border-3"/>
+          <Image height={300} width={300} src={"/slide1.webp"} alt="1" className="rounded shadow hover:shadow-black hover:border-3"/>
+          
+          
 
-      <div className="flex space-x-4 overflow-x-auto scrollbar-hide p-4">
-  <div className="min-w-[150px] h-24 bg-blue-500 text-white flex items-center justify-center rounded-lg">Salesforce</div>
-  <div className="min-w-[150px] h-24 bg-blue-500 text-white flex items-center justify-center rounded-lg">Salesforce</div>
-  <div className="min-w-[150px] h-24 bg-blue-500 text-white flex items-center justify-center rounded-lg">Salesforce</div>
-  <div className="min-w-[150px] h-24 bg-blue-500 text-white flex items-center justify-center rounded-lg">Salesforce</div>
-  <div className="min-w-[150px] h-24 bg-blue-500 text-white flex items-center justify-center rounded-lg">Salesforce</div>
-  <div className="min-w-[150px] h-24 bg-green-500 text-white flex items-center justify-center rounded-lg">Google Calendar</div>
-  <div className="min-w-[150px] h-24 bg-purple-500 text-white flex items-center justify-center rounded-lg">Zoom</div>
-  <div className="min-w-[150px] h-24 bg-orange-500 text-white flex items-center justify-center rounded-lg">Slack</div>
-  <div className="min-w-[150px] h-24 bg-red-500 text-white flex items-center justify-center rounded-lg">PayPal</div>
-  <div className="min-w-[150px] h-24 bg-red-500 text-white flex items-center justify-center rounded-lg">PayPal</div>
-  <div className="min-w-[150px] h-24 bg-red-500 text-white flex items-center justify-center rounded-lg">PayPal</div>
-  <div className="min-w-[150px] h-24 bg-red-500 text-white flex items-center justify-center rounded-lg">PayPal</div>
-  <div className="min-w-[150px] h-24 bg-red-500 text-white flex items-center justify-center rounded-lg">PayPal</div>
-  <div className="min-w-[150px] h-24 bg-red-500 text-white flex items-center justify-center rounded-lg">PayPal</div>
-  <div className="min-w-[150px] h-24 bg-red-500 text-white flex items-center justify-center rounded-lg">PayPal</div>
-  <div className="min-w-[150px] h-24 bg-red-500 text-white flex items-center justify-center rounded-lg">PayPal</div>
-  <div className="min-w-[150px] h-24 bg-red-500 text-white flex items-center justify-center rounded-lg">PayPal</div>
-  <div className="min-w-[150px] h-24 bg-red-500 text-white flex items-center justify-center rounded-lg">PayPal</div>
-  <div className="min-w-[150px] h-24 bg-red-500 text-white flex items-center justify-center rounded-lg">PayPal</div>
-  <div className="min-w-[150px] h-24 bg-red-500 text-white flex items-center justify-center rounded-lg">PayPal</div>
-  <div className="min-w-[150px] h-24 bg-red-500 text-white flex items-center justify-center rounded-lg">PayPal</div>
-  <div className="min-w-[150px] h-24 bg-red-500 text-white flex items-center justify-center rounded-lg">PayPal</div>
-  <div className="min-w-[150px] h-24 bg-red-500 text-white flex items-center justify-center rounded-lg">PayPal</div>
-  <div className="min-w-[150px] h-24 bg-red-500 text-white flex items-center justify-center rounded-lg">PayPal</div>
-  <div className="min-w-[150px] h-24 bg-red-500 text-white flex items-center justify-center rounded-lg">PayPal</div>
-  <div className="min-w-[150px] h-24 bg-red-500 text-white flex items-center justify-center rounded-lg">PayPal</div>
-</div>
-
+       </div>
+      </div>
 </main>
   
 );

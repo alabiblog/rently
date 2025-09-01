@@ -2,7 +2,7 @@ import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
 import { Footer } from "@/components/Footer";
 import { Navbar } from "@/components/Navbar";
-import { Carousel } from "@/components/carousel";
+
 
 
 
@@ -30,7 +30,7 @@ export default function RootLayout({ children }) {
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
         
       >
-        <Carousel/>
+        <Navbar/>
         {children}
         <Footer/>
       </body>

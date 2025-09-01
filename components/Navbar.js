@@ -5,6 +5,7 @@ import Image from "next/image";
 import { useState } from "react";
 import { RxHamburgerMenu } from "react-icons/rx";
 import { CgProfile } from "react-icons/cg";
+import Link from "next/link";
 
 
 
@@ -14,7 +15,7 @@ import { CgProfile } from "react-icons/cg";
 export function Navbar(){
     const[visible,setVisible]= useState(false)
     return(
-        <main>
+        <main className="bg-gray-400 shadow-2xl">
     <div className="relative flex justify-between">
     <div className="flex gap-1 p-2  mt-1 lg:mt-0 lg:p-5">
        <Image
@@ -26,10 +27,10 @@ export function Navbar(){
     </div>
     <div className="hidden lg:flex lg:gap-4 lg:mt-6 lg:block">
         <h1 className="text-white font-bold">About</h1>
-        <h1 className="text-white font-bold">Projects</h1>
-        <h1 className="text-white font-bold">Mortgage</h1>
+        <Link href={"/dashboard/tenant"}><h1 className="text-white font-bold">Tenant-Form</h1></Link>
+        <Link href={"/app/page"}><h1 className="text-white font-bold">Home</h1></Link>
         <h1 className="text-white font-bold">Contact Us</h1>
-        <h1 className="text-white font-bold">Blog</h1>
+        <Link href={"/auth/login"}><h1 className="text-white font-bold">Login</h1></Link>
         
     </div>
     
@@ -41,15 +42,18 @@ export function Navbar(){
         type="search"
         placeholder="Investment Option"
         className="border p-1 bg-yellow-300  rounded-xl mb-15 font-bold"/>
-       <CgProfile className="text-4xl text-yellow-300"/>
+        
+       <Link href={"/dashboard/profile"}><CgProfile className="text-4xl text-yellow-300"/></Link>
+       
       </div>
       </div>
-    {visible &&<div className="bg-teal-50 flex h-10 mr-4 gap-6 p-2 lg:hidden">
+    {visible &&<div className="bg-teal-50 flex h-10  gap-6 p-2 lg:hidden">
          <small className="font-bold">About</small>
-         <small className="font-bold">Projects</small>
-         <small className="font-bold">Mortgage</small>
+         <Link href={"/dashboard/tenant"}><small className="font-bold">Tenant-Form</small></Link>
+         <Link href={"/auth/login"}><small className="font-bold">Login</small></Link>
          <small className="font-bold">Contact Us</small>
-         <small className="font-bold text-2xl text-yellow-300"><CgProfile /></small>
+         <Link href={"/dashboard/profile"}><small className="font-bold text-2xl text-yellow-300"><CgProfile /></small></Link>
+         
         </div>}
     </main>
     )
