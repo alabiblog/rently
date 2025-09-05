@@ -2,6 +2,8 @@ import Image from "next/image"
 import { HiFire } from "react-icons/hi";
 import { FaPhone } from "react-icons/fa6";
 import { IoLogoWhatsapp } from "react-icons/io";
+import Link from "next/link";
+
 
 export default function Nasarawa(){
     return(
