@@ -9,8 +9,8 @@ export default async function Login(){
      const session = await auth();
      console.log(session);
     return(
-        <main className="min-h-screen flex justify-center">
-            <div className="w-90 mt-5 shadow">
+        <main className="min-h-screen flex justify-center bg-[url(/Whitehouse1.avif)]  bg-cntain bg-no-repeat">
+            <div className="w-120 mt-5 shadow">
               <form>
                 <h1 className="text-2xl lg:text-3xl font-semibold text-center p-5">Sign Up</h1>
                 <h1 className="text-center mt-5 text-sm text-blue-300">Create an Account or Sign in</h1>
@@ -30,7 +30,7 @@ export default async function Login(){
                 }}>
                 <div className="flex gap-2 justify-center mt-20 shadow mx-20 p-2 rounded">
                    <FcGoogle className="text-2xl"/> 
-                   <button>Sign in with Google</button>
+                   <button type="submit">Sign in with Google</button>
                 </div>
               </form>
 

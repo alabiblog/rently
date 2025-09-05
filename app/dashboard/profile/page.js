@@ -1,8 +1,12 @@
+import { auth } from "@/auth"
+import { Button } from "@mui/material";
 import Image from "next/image"
 
 
 
-export default function Profile(){
+export default async function Profile(){
+    const session = await auth();
+    console.log(session);
     return(
         <main className="min-h-screen max-w-full flex justify-center">
             <div className="w-full shadow-lg my-5 md:w-80">
@@ -14,10 +18,12 @@ export default function Profile(){
               alt="profile-image"
               className="w-30 h-30 rounded-full mt-3"/>
             </div>
-            <h1 className="text-center border-b mt-5">User Name</h1>
-            <h1 className="text-center border-b mt-5">Email</h1>
-            <h1 className="text-center border-b mt-5">User ID</h1>
-
+            <h1 className="text-center border-b mt-5">{session?.user?.name}</h1>
+            <h1 className="text-center border-b mt-5">{session?.user?.email}</h1>
+            <h1 className="text-center border-b mt-5">User ID:{session?.user?.id}</h1>
+             <form className="mt-3">
+                <Button className="w-full" variant="contained" type="submit">Log Out</Button>
+             </form>
             </div>
         </main>
     )

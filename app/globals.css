@@ -1,5 +1,5 @@
 @import "tailwindcss";
 
 .mySwiper .swiper-pagination-bullet{
- @apply bg-yellow-300 w-4 h-4 rounded-full;
+ @apply bg-yellow-300 w-4 h-4;
 }

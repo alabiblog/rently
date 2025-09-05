@@ -26,9 +26,8 @@ export function Navbar(){
       <h1 className="text-1xl font-bold text-yellow-300 lg:text-3xl"><span className="text-white font-bold">ALABI</span>HOUSING<br/><span className="text-sm text-white font-bold">Limited</span></h1> 
     </div>
     <div className="hidden lg:flex lg:gap-4 lg:mt-6 lg:block">
-        <h1 className="text-white font-bold">About</h1>
+       <Link href="/"><h1 className="text-white font-bold">Home</h1></Link> 
         <Link href={"/dashboard/tenant"}><h1 className="text-white font-bold">Tenant-Form</h1></Link>
-        <Link href={"/app/page"}><h1 className="text-white font-bold">Home</h1></Link>
         <h1 className="text-white font-bold">Contact Us</h1>
         <Link href={"/auth/login"}><h1 className="text-white font-bold">Login</h1></Link>
         
@@ -48,10 +47,10 @@ export function Navbar(){
       </div>
       </div>
     {visible &&<div className="bg-teal-50 flex h-10  gap-6 p-2 lg:hidden">
-         <small className="font-bold">About</small>
+         <Link href="/"><small className="font-bold p-1">Home</small></Link>
          <Link href={"/dashboard/tenant"}><small className="font-bold">Tenant-Form</small></Link>
          <Link href={"/auth/login"}><small className="font-bold">Login</small></Link>
-         <small className="font-bold">Contact Us</small>
+         <small className="font-bold p-1">Contact Us</small>
          <Link href={"/dashboard/profile"}><small className="font-bold text-2xl text-yellow-300"><CgProfile /></small></Link>
          
         </div>}

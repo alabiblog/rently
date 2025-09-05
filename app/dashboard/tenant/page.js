@@ -1,9 +1,14 @@
 "use client"
 
+import { db } from "@/config/firebase.config";
  import { Button, FormControl, InputLabel, MenuItem, Select, TextField } from "@mui/material";
+import { addDoc, collection } from "firebase/firestore";
 import { useFormik } from "formik";
-
 import * as yup from "yup"
+import {useSession} from "next-auth/react"
+
+
+
 
 
 const schema = yup.object().shape({
@@ -19,7 +24,9 @@ const schema = yup.object().shape({
 })
 
 
-export default function tenant(){
+export default function Tenant(){
+    const {data : session}= useSession();
+    console.log(session)
     const{handleBlur,handleChange,handleSubmit,touched,errors,values}=useFormik({
       initialValues: {
         fullName: "",
@@ -30,20 +37,38 @@ export default function tenant(){
         dueDate: "",
         paymentStatus: "",
         notes: "",
+     },
+     onSubmit: async (values,{resetForm})=>{
+        await addDoc(collection(db,"tenant"),{
+            user:session?.user?.id  || null,
+            fullName: values.fullName,
+            phoneNumber: values.phoneNumber,
+            email: values.email,
+            apartmentUnit: values.apartmentUnit,
+            rentAmount: values.rentAmount,
+            dueDate: values.dueDate,
+            paymentStatus: values.paymentStatus,
+            notes: values.notes,
+            timeCreated:new Date().getTime(),
+        }).then(()=>{
+            alert("You Have Submitted Successfully")
+        resetForm()
 
-      },
-      onSubmit:(values,{resetForm})=>{
-            console.log(`fullname: ${values.fullName} email: ${values.email} amount: ${values.rentAmount} status: ${values.paymentStatus}`)
-            resetForm()
-      },
+        })
+        .catch((error)=>{
+            console.error("Firestore error:", error);
+            alert("Unable To Submit")
+        })
+     },
+      
       validationSchema:schema
     })
     return(
-        <main>
+        <main className="min-h-screen bg-[url(/Whitehouse1.avif)]  bg-cntain bg-no-repeat">
             <form  onSubmit={handleSubmit} className="flex justify-center min-h-screen max-w-screen">
 
                 <div className="shadow-lg w-150 py-10">
-                <h1 className="text-center mt-5 text-2xl md:text-3xl lg:text-3xl">Add Tenant</h1>
+                <h1 className="text-center mt-5 text-2xl md:text-3xl lg:text-3xl font-bold">Add Tenant</h1>
                 <div className="grid grid-cols-1 mt-5 mx-5 md:grid md:grid-cols-2 md:gap-5 lg:grid lg:grid-cols-2 lg:gap-5">
 
                 <div className="">
@@ -157,205 +182,12 @@ export default function tenant(){
                 <div className="mt-5 mx-5 rounded bg-blue-200">
                     <Button fullWidth type="submit">Add Tenant</Button>
                 </div>
+
                </div>
             </form>
         </main>
     )
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-// "use client"
-
-// import { Button, FormControl, InputLabel, MenuItem, Select, TextField } from "@mui/material";
-// import { useFormik } from "formik"
-// import * as yup from "yup"
-
-// const schema = yup.object().shape({
-//     fullName: yup.string().required("Full name is required").min(2),
-//     phone: yup.string().required("phone number is required"),
-//     email: yup.string().required("email is required"),
-//     apartmentUnit: yup.string().required("Apartment unit is required"),
-//     rentAmount: yup.number().required("Rent amout is required"),
-//     date: yup.date().required("Due date required"),
-//     paymentStatus: yup.string().oneOf(["paid","unpaid"]).required("Payment status required"),
-//     notes: yup.string().required("note is required"),
-// });
-
-
-
-
-// export default function tenant(){
-//     const {handleBlur,handleChange,handleSubmit,values,touched,errors}= useFormik({
-//          initialValues:{
-//             fullName: "",
-//             phone: "",
-//             email: "",
-//             apartmentUnit: "",
-//             rentAmount: "",
-//             date: "",
-//             paymentStatus: "",
-//             notes: "",
-
-//          },
-//         onSubmit:(values,{resetForm})=>{
-//             console.log(`fullname: ${values.fullName} email: ${values.email} amount: ${values.rentAmount} status: ${values.paymentStatus}`)
-//             resetForm()
-//         },
-//         validationSchema:schema
-//     })
-//     return(
-//         <main className="min-h-screen flex justify-center ">
-//            <form>
-//             <div  className="shadow-lg w-90  my-5 md:w-150 min-h-screen">
-//                 <h1 className="text-2xl font-semibold text-center">Add Tenant</h1>
-//                 <div className="mt-5 md:flex md:justify-center gap-2 mx-2">
-//                     <TextField
-//                     fullWidth
-//                     type="text"
-//                     placeholder="Full Name"
-//                     label="Full Name"
-//                     id="fullName"
-//                     onChange={handleChange}
-//                     onBlur={handleBlur}
-//                     value={values.fullName}/>
-//                     {touched.fullName && errors.fullName ? <span className="text-red-700">{errors.fullName}</span> : null}
-
-//                 </div>
-//                    <div> 
-//                     <TextField
-//                     fullWidth
-//                     label="Phone Number"
-//                     type="tel"
-//                     placeholder="+234"
-//                     id="phone"
-//                     onChange={handleChange}
-//                     onBlur={handleBlur}
-//                     value={values.phoneNumber}/>
-//                     {touched.phone && errors.phone ? <span className="text-red-700">{errors.phone}</span> : null}
-
-//                 </div>
-//                 <div className="mt-5 md:flex md:justify-center gap-2 mx-2">
-//                     <TextField
-//                     fullWidth
-//                     type="email"
-//                     placeholder="@gmail.com"
-//                     label="Enter Email"
-//                     id="email"
-//                     onChange={handleChange}
-//                     onBlur={handleBlur}
-//                     value={values.email}/>
-//                     {touched.email && errors.email ? <span className="text-red-700">{errors.email}</span> : null}
-
-//                 </div>
-//                     <div>
-//                     <TextField
-//                     fullWidth
-//                     label="Apartment/Unit"
-//                     type="text"
-//                     placeholder="Apartment/Unit"
-//                     id="apartmentUnit"
-//                     onChange={handleChange}
-//                     onBlur={handleBlur}
-//                     value={values.apartmentUnit}/>
-//                     {touched.apartmentUnit && errors.apartmentUnit ? <span className="text-red-700">{errors.apartmentUnit}</span> : null}
-
-//                     </div>
-                    
-            
-//                 <div className="mt-5 md:flex md:justify-center gap-2 mx-2">
-//                     <TextField
-//                     fullWidth
-//                     type="number"
-//                     placeholder="Rent Amount"
-//                     label="Rent Amount"
-//                     id="rentAmount"
-//                     onChange={handleChange}
-//                     onBlur={handleBlur}
-//                     value={values.rentAmount}/>
-//                     {touched.rentAmount && errors.rentAmount ? <span className="text-red-700">{errors.rentAmount}</span> : null}
-
-//                 </div>
-//                    <div> 
-//                     <TextField
-//                     fullWidth
-//                     label="Due Date"
-//                     placeholder="enter rent duee  date"
-//                     InputLabelProps={{shrink:true}} 
-//                     type="date"
-//                     id="date"
-//                     onChange={handleChange}
-//                     onBlur={handleBlur}
-//                     value={values.date}/>
-//                     {touched.date && errors.date ? <span className="text-red-700">{errors.date}</span> : null}
-
-//                     </div>
-                    
-                
-//                 <div className="mt-10 mx-2">
-//                  <FormControl fullWidth >
-//                     <InputLabel >Payment Status</InputLabel>
-//                     <Select 
-//                     id="paymentStatus"
-//                     name="paymentStatus"
-//                     onChange={handleChange}
-//                     onBlur={handleBlur}
-//                     value={values.paymentStatus}>
-                    
-//                         <MenuItem value="paid">paid</MenuItem>
-//                         <MenuItem value="unpaid">unpaid</MenuItem>
-//                     </Select>
-//                     {touched.paymentStatus && errors.paymentStatus ? <span className="text-red-700">{errors.paymentStatus}</span> : null}
-                   
-//                 </FormControl> 
-//                 </div>
-//                 <div className="mt-5 mx-2">
-//                     <TextField
-//                     fullWidth
-//                     label="notes"
-//                     type="text"
-//                     multiline
-//                     rows={5}
-//                     placeholder="note"
-//                     id="notes"
-//                     onChange={handleChange}
-//                     onBlur={handleBlur}
-//                     value={values.notes}/>
-//                     {touched.notes && errors.notes ? <span className="text-red-700">{errors.notes}</span> : null}
-//                 </div>
-//                 <div className="shadow-lg mt-5 mx-2 rounded bg-blue-200">
-//                     <Button fullWidth>Add Tenant</Button>
-//                 </div>
-
-//             </div>
-//            </form>
-//         </main>
-//     )
-// }
-
 
 
 
