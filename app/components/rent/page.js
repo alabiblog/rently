@@ -22,7 +22,7 @@ export default function Rent(){
                       <Image
                     width={300}
                     height={20}
-                    src={"/Vivo.jpeg"}
+                    src={"/vivo.jpeg"}
                     alt="vivo"
                     className="w-220 h-50 shadow-lg rounded-xl"/>
                     </div>
@@ -31,7 +31,7 @@ export default function Rent(){
                         <Image
                         width={100}
                         height={100}
-                        src={"/Image2.jpg"}
+                        src={"/image2.jpg"}
                         alt="2"
                         className="w-80 ml-10 my-3 h-60"/>
                        </div>
@@ -56,7 +56,7 @@ export default function Rent(){
                         <Image
                         width={100}
                         height={100}
-                        src={"/Image2.jpg"}
+                        src={"/image2.jpg"}
                         alt="2"
                         className="w-80 ml-10 my-3 h-60"/>
                        </div>
@@ -82,7 +82,7 @@ export default function Rent(){
                         <Image
                         width={100}
                         height={100}
-                        src={"/Image2.jpg"}
+                        src={"/image2.jpg"}
                         alt="2"
                         className="w-80 ml-10 my-3 h-60"/>
                        </div>
@@ -108,7 +108,7 @@ export default function Rent(){
                         <Image
                         width={100}
                         height={100}
-                        src={"/Image2.jpg"}
+                        src={"/image2.jpg"}
                         alt="2"
                         className="w-80 ml-10 my-3 h-60"/>
                        </div>
@@ -134,7 +134,7 @@ export default function Rent(){
                         <Image
                         width={100}
                         height={100}
-                        src={"/Image2.jpg"}
+                        src={"/image2.jpg"}
                         alt="2"
                         className="w-80 ml-10 my-3 h-60"/>
                        </div>
@@ -160,7 +160,7 @@ export default function Rent(){
                         <Image
                         width={100}
                         height={100}
-                        src={"/Image2.jpg"}
+                        src={"/image2.jpg"}
                         alt="2"
                         className="w-80 ml-10 my-3 h-60"/>
                        </div>
@@ -229,7 +229,7 @@ export default function Rent(){
                     <Image
                     width={70}
                     height={80}
-                    src={"/Mini111.png"}
+                    src={"/mini111.png"}
                     alt="mini"
                     className="h-25 w-25 absolute top-90 left-5"/>
                     <h1 className="mt-15 p-4 font-bold">NeighbourHoods</h1>
