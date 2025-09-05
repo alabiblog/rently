@@ -17,7 +17,7 @@ export default function Twobedroom(){
                                                           <Image
                                                           width={100}
                                                           height={100}
-                                                          src={"/Image2.jpg"}
+                                                          src={"/fourbed.jpg"}
                                                           alt="2"
                                                           className="w-80 ml-10 my-3 h-60"/>
                                                          </div>
@@ -42,7 +42,7 @@ export default function Twobedroom(){
                                                           <Image
                                                           width={100}
                                                           height={100}
-                                                          src={"/Image2.jpg"}
+                                                          src={"/zzz1.jpeg"}
                                                           alt="2"
                                                           className="w-80 ml-10 my-3 h-60"/>
                                                          </div>
@@ -68,7 +68,7 @@ export default function Twobedroom(){
                                                           <Image
                                                           width={100}
                                                           height={100}
-                                                          src={"/Image2.jpg"}
+                                                          src={"/zzz2.jpg"}
                                                           alt="2"
                                                           className="w-80 ml-10 my-3 h-60"/>
                                                          </div>

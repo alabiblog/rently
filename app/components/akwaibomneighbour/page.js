@@ -58,7 +58,7 @@ export default function Abujaneighb(){
                   <Image
                   width={70}
                   height={60}
-                  src={"/Hand1.jpeg"}
+                  src={"/axis11.jpeg"}
                   alt="1"
                   className="w-65  h-45"/>
                   <p className="mt-3 text-yellow-300 font-bold">PHASE 1</p>
@@ -68,7 +68,7 @@ export default function Abujaneighb(){
                   <Image
                   width={70}
                   height={60}
-                  src={"/Hand1.jpeg"}
+                  src={"/axis22.jpeg"}
                   alt="1"
                   className="w-65  h-45"/>
                   <p className="mt-3 text-yellow-300 font-bold">PHASE 1</p>
@@ -78,7 +78,7 @@ export default function Abujaneighb(){
                   <Image
                   width={70}
                   height={60}
-                  src={"/Hand1.jpeg"}
+                  src={"/axis33.jpeg"}
                   alt="1"
                   className="w-65  h-45"/>
                   <p className="mt-3 text-yellow-300 font-bold">PHASE 1</p>
@@ -88,7 +88,7 @@ export default function Abujaneighb(){
                   <Image
                   width={70}
                   height={60}
-                  src={"/Hand1.jpeg"}
+                  src={"/axis44.jpeg"}
                   alt="1"
                   className="w-65  h-45"/>
                   <p className="mt-3 text-yellow-300 font-bold">PHASE 1</p>
@@ -98,7 +98,7 @@ export default function Abujaneighb(){
                   <Image
                   width={70}
                   height={60}
-                  src={"/Hand1.jpeg"}
+                  src={"/axis55.jpeg"}
                   alt="1"
                   className="w-65  h-45"/>
                   <p className="mt-3 text-yellow-300 font-bold">PHASE 1</p>
@@ -128,7 +128,7 @@ export default function Abujaneighb(){
                   <Image
                   width={70}
                   height={60}
-                  src={"/Hand1.jpeg"}
+                  src={"/list11.jpg"}
                   alt="1"
                   className="w-65  h-35"/>
                   <p className="text-2xl p-2">7 Bedroom Detached Duplex</p>
@@ -146,7 +146,7 @@ export default function Abujaneighb(){
                   <Image
                   width={70}
                   height={60}
-                  src={"/Hand1.jpeg"}
+                  src={"/list22.png"}
                   alt="1"
                   className="w-65  h-35"/>
                   <p className="text-2xl p-2">Newly Built 6 Bedroom With Boys Quarters</p>
@@ -163,7 +163,7 @@ export default function Abujaneighb(){
                   <Image
                   width={70}
                   height={60}
-                  src={"/Hand1.jpeg"}
+                  src={"/list33.jpg"}
                   alt="1"
                   className="w-65  h-35"/>
                   <p className="text-2xl p-2">Newly Built 4 Bedroom Duplex</p>
@@ -185,7 +185,7 @@ export default function Abujaneighb(){
                   <Image
                   width={70}
                   height={60}
-                  src={"/Hand2.jpeg"}
+                  src={"/list44.jpg"}
                   alt="1"
                   className="w-65  h-35"/>
                   <p className="text-2xl p-2">7 bedroom Duplex With Bq ( Tarred Road )</p>
@@ -203,7 +203,7 @@ export default function Abujaneighb(){
                   <Image
                   width={70}
                   height={60}
-                  src={"/Hand2.jpeg"}
+                  src={"/list22.png"}
                   alt="1"
                   className="w-65  h-35"/>
                   <p className="text-2xl p-2">5 Bedroom Detached Duplex</p>
@@ -221,7 +221,7 @@ export default function Abujaneighb(){
                   <Image
                   width={70}
                   height={60}
-                  src={"/Hand2.jpeg"}
+                  src={"/list66.jpg"}
                   alt="1"
                   className="w-65  h-35"/>
                   <p className="text-2xl p-2">Lovely 7 Bedroom Apartment</p>

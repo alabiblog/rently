@@ -10,7 +10,7 @@ export default function Neighbourh(){
                 <Image
                 width={120}
                 height={120}
-                src={"/Abuja.jpeg"}
+                src={"/abuja.jpeg"}
                 alt="abuja"
                 className="w-80  lg:w-80 h-50 xl:w-100 opacity-80 hover:opacity-200"/>
                 <h1 className="text-2xl font-bold text-white absolute top-20 left-25 xl:left-35">ABUJA</h1>
@@ -19,7 +19,7 @@ export default function Neighbourh(){
                 <Image
                 width={120}
                 height={120}
-                src={"/Adamawa.jpeg"}
+                src={"/adamawa.jpeg"}
                 alt="adamawa"
                 className="w-80  lg:w-80  h-50 xl:w-100 opacity-80 hover:opacity-200"/>
                 <h1 className="text-2xl font-bold text-white absolute top-20 left-25 xl:left-35">ADAMAWA</h1>
@@ -28,7 +28,7 @@ export default function Neighbourh(){
                 <Image
                 width={120}
                 height={120}
-                src={"/Akwaibom.jpeg"}
+                src={"/akwaibom.jpeg"}
                 alt="akwaibom"
                 className="w-80  lg:w-80 xl:w-100 h-50 opacity-80 hover:opacity-200"/>
                 <h1 className="text-2xl font-bold text-white absolute top-20 left-25 xl:left-35">AKWAIBOM</h1>
@@ -37,7 +37,7 @@ export default function Neighbourh(){
                 <Image
                 width={120}
                 height={120}
-                src={"/Anambra.jpeg"}
+                src={"/anambra.jpeg"}
                 alt="anambra"
                 className="w-80  lg:w-80 xl:w-100 h-50 opacity-80 hover:opacity-200"/>
                 <h1 className="text-2xl font-bold text-white absolute top-20 left-25 xl:left-35">ANAMBRA</h1>
@@ -46,7 +46,7 @@ export default function Neighbourh(){
                 <Image
                 width={120}
                 height={120}
-                src={"/Bauchi.jpeg"}
+                src={"/bauchi.jpeg"}
                 alt="bauchi"
                 className="w-80  lg:w-80 xl:w-100 h-50 opacity-80 hover:opacity-200"/>
                 <h1 className="text-2xl font-bold text-white absolute top-20 left-25 xl:left-35">BAUCHI</h1>
@@ -55,7 +55,7 @@ export default function Neighbourh(){
                 <Image
                 width={120}
                 height={120}
-                src={"/Bayalsa.jpeg"}
+                src={"/bayalsa.jpeg"}
                 alt="bayalsa"
                 className="w-80  lg:w-80 xl:w-100 h-50 opacity-80 hover:opacity-200"/>
                 <h1 className="text-2xl font-bold text-white absolute top-20 left-25 xl:left-35">BAYALSA</h1>
@@ -64,7 +64,7 @@ export default function Neighbourh(){
                 <Image
                 width={120}
                 height={120}
-                src={"/Delta.jpeg"}
+                src={"/delta.jpeg"}
                 alt="delta"
                 className="w-80  lg:w-80 xl:w-100 h-50 opacity-80 hover:opacity-200"/>
                 <h1 className="text-2xl font-bold text-white absolute top-20 left-25 xl:left-35">DELTA</h1>
@@ -73,7 +73,7 @@ export default function Neighbourh(){
                 <Image
                 width={120}
                 height={120}
-                src={"/Ebonyi.jpeg"}
+                src={"/ebonyi.jpeg"}
                 alt="ebonyi"
                 className="w-80  lg:w-80 xl:w-100 h-50 opacity-80 hover:opacity-200"/>
                 <h1 className="text-2xl font-bold text-white absolute top-20 left-25 xl:left-35">EBONYI</h1>
@@ -82,7 +82,7 @@ export default function Neighbourh(){
                 <Image
                 width={120}
                 height={120}
-                src={"/Edo.jpeg"}
+                src={"/edo.jpeg"}
                 alt="edo"
                 className="w-80  lg:w-80 xl:w-100 h-50 opacity-80 hover:opacity-200"/>
                 <h1 className="text-2xl font-bold text-white absolute top-20 left-25 xl:left-35">EDO</h1>
@@ -91,7 +91,7 @@ export default function Neighbourh(){
                 <Image
                 width={120}
                 height={120}
-                src={"/Ekiti.jpeg"}
+                src={"/ekiti.jpeg"}
                 alt="ekiti"
                 className="w-80  lg:w-80 xl:w-100 h-50 opacity-80 hover:opacity-200"/>
                 <h1 className="text-2xl font-bold text-white absolute top-20 left-25 xl:left-35">EKITI</h1>
@@ -100,7 +100,7 @@ export default function Neighbourh(){
                 <Image
                 width={120}
                 height={120}
-                src={"/Enugu.jpeg"}
+                src={"/enugu.jpeg"}
                 alt="enugu"
                 className="w-80  lg:w-80 xl:w-100 h-50 opacity-80 hover:opacity-200"/>
                 <h1 className="text-2xl font-bold text-white absolute top-20 left-25 xl:left-35">ENUGU</h1>
@@ -109,7 +109,7 @@ export default function Neighbourh(){
                 <Image
                 width={120}
                 height={120}
-                src={"/Jigawa.jpg"}
+                src={"/jigawa.jpg"}
                 alt="jigawa"
                 className="w-80  lg:w-80 xl:w-100 h-50 opacity-80 hover:opacity-200"/>
                 <h1 className="text-2xl font-bold text-white absolute top-20 left-25 xl:left-35">JIGAWA</h1>
@@ -118,7 +118,7 @@ export default function Neighbourh(){
                 <Image
                 width={120}
                 height={120}
-                src={"/Kogi.jpeg"}
+                src={"/kogi.jpeg"}
                 alt="kogi"
                 className="w-80  lg:w-80 xl:w-100 h-50 opacity-80 hover:opacity-200"/>
                 <h1 className="text-2xl font-bold text-white absolute top-20 left-25 xl:left-35">KOGI</h1>
@@ -127,7 +127,7 @@ export default function Neighbourh(){
                 <Image
                 width={120}
                 height={120}
-                src={"/Lagos.jpg"}
+                src={"/lagos.jpg"}
                 alt="lagos"
                 className="w-80  lg:w-80 xl:w-100 h-50 opacity-80 hover:opacity-200"/>
                 <h1 className="text-2xl font-bold text-white absolute top-20 left-25 xl:left-35">LAGOS</h1>
@@ -136,7 +136,7 @@ export default function Neighbourh(){
                 <Image
                 width={120}
                 height={120}
-                src={"/Nasarawa.jpeg"}
+                src={"/nasarawa.jpeg"}
                 alt="nasarawa"
                 className="w-80  lg:w-80 xl:w-100 h-50 opacity-80 hover:opacity-200"/>
                 <h1 className="text-2xl font-bold text-white absolute top-20 left-25 xl:left-35">NASARAWA</h1>
@@ -145,7 +145,7 @@ export default function Neighbourh(){
                 <Image
                 width={120}
                 height={120}
-                src={"/Oyo.jpg"}
+                src={"/oyo.jpg"}
                 alt="oyo"
                 className="w-80  lg:w-80 xl:w-100 h-50 opacity-80 hover:opacity-200"/>
                 <h1 className="text-2xl font-bold text-white absolute top-20 left-25 xl:left-35">OYO</h1>
@@ -154,7 +154,7 @@ export default function Neighbourh(){
                 <Image
                 width={120}
                 height={120}
-                src={"/Rivers.jpg"}
+                src={"/rivers.jpg"}
                 alt="rivers"
                 className="w-80  lg:w-80 xl:w-100 h-50 opacity-80 hover:opacity-200"/>
                 <h1 className="text-2xl font-bold text-white absolute top-20 left-25 xl:left-35">RIVERS</h1>
@@ -163,7 +163,7 @@ export default function Neighbourh(){
                 <Image
                 width={120}
                 height={120}
-                src={"/Zamfara.jpeg"}
+                src={"/zamfara.jpeg"}
                 alt="zamfara"
                 className="w-80  lg:w-80 xl:w-100 h-50 opacity-80 hover:opacity-200"/>
                 <h1 className="left-25 text-2xl font-bold text-white absolute top-20 xl:left-35">ZAMFARA</h1>

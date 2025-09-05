@@ -31,7 +31,7 @@ export default function Rent(){
                         <Image
                         width={100}
                         height={100}
-                        src={"/image2.jpg"}
+                        src={"/rent1.jpg"}
                         alt="2"
                         className="w-80 ml-10 my-3 h-60"/>
                        </div>
@@ -56,7 +56,7 @@ export default function Rent(){
                         <Image
                         width={100}
                         height={100}
-                        src={"/image2.jpg"}
+                        src={"/rent2.jpg"}
                         alt="2"
                         className="w-80 ml-10 my-3 h-60"/>
                        </div>
@@ -82,7 +82,7 @@ export default function Rent(){
                         <Image
                         width={100}
                         height={100}
-                        src={"/image2.jpg"}
+                        src={"/rent3.jpg"}
                         alt="2"
                         className="w-80 ml-10 my-3 h-60"/>
                        </div>
@@ -108,7 +108,7 @@ export default function Rent(){
                         <Image
                         width={100}
                         height={100}
-                        src={"/image2.jpg"}
+                        src={"/rent4.jpg"}
                         alt="2"
                         className="w-80 ml-10 my-3 h-60"/>
                        </div>
@@ -134,7 +134,7 @@ export default function Rent(){
                         <Image
                         width={100}
                         height={100}
-                        src={"/image2.jpg"}
+                        src={"/rent5.jpg"}
                         alt="2"
                         className="w-80 ml-10 my-3 h-60"/>
                        </div>
@@ -160,7 +160,7 @@ export default function Rent(){
                         <Image
                         width={100}
                         height={100}
-                        src={"/image2.jpg"}
+                        src={"/rent6.jpg"}
                         alt="2"
                         className="w-80 ml-10 my-3 h-60"/>
                        </div>

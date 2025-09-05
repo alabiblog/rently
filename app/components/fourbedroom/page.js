@@ -17,7 +17,7 @@ export default function Fourbedroom(){
                                                           <Image
                                                           width={100}
                                                           height={100}
-                                                          src={"/Image2.jpg"}
+                                                          src={"/aaa1.jpg"}
                                                           alt="2"
                                                           className="w-80 ml-10 my-3 h-60"/>
                                                          </div>
@@ -42,7 +42,7 @@ export default function Fourbedroom(){
                                                           <Image
                                                           width={100}
                                                           height={100}
-                                                          src={"/Image2.jpg"}
+                                                          src={"/aaa2.png"}
                                                           alt="2"
                                                           className="w-80 ml-10 my-3 h-60"/>
                                                          </div>
@@ -68,7 +68,7 @@ export default function Fourbedroom(){
                                                           <Image
                                                           width={100}
                                                           height={100}
-                                                          src={"/Image2.jpg"}
+                                                          src={"/aaa3.jpg"}
                                                           alt="2"
                                                           className="w-80 ml-10 my-3 h-60"/>
                                                          </div>

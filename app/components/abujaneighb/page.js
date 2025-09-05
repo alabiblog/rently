@@ -58,7 +58,7 @@ export default function Abujaneighb(){
                   <Image
                   width={70}
                   height={60}
-                  src={"/Hand1.jpeg"}
+                  src={"/axis1.jpeg"}
                   alt="1"
                   className="w-65  h-45"/>
                   <p className="mt-3 text-yellow-300 font-bold">PHASE 1</p>
@@ -68,40 +68,40 @@ export default function Abujaneighb(){
                   <Image
                   width={70}
                   height={60}
-                  src={"/Hand1.jpeg"}
+                  src={"/axis2.jpeg"}
                   alt="1"
                   className="w-65  h-45"/>
-                  <p className="mt-3 text-yellow-300 font-bold">PHASE 1</p>
+                  <p className="mt-3 text-yellow-300 font-bold">PHASE 2</p>
 
                 </div>
                 <div className="shadow-2xl p-2 h-60 w-70">
                   <Image
                   width={70}
                   height={60}
-                  src={"/Hand1.jpeg"}
+                  src={"/axis3.jpeg"}
                   alt="1"
                   className="w-65  h-45"/>
-                  <p className="mt-3 text-yellow-300 font-bold">PHASE 1</p>
+                  <p className="mt-3 text-yellow-300 font-bold">PHASE 3</p>
 
                 </div>
                 <div className="shadow-2xl p-2 h-60 w-70">
                   <Image
                   width={70}
                   height={60}
-                  src={"/Hand1.jpeg"}
+                  src={"/axix4.jpeg"}
                   alt="1"
                   className="w-65  h-45"/>
-                  <p className="mt-3 text-yellow-300 font-bold">PHASE 1</p>
+                  <p className="mt-3 text-yellow-300 font-bold">PHASE 4</p>
 
                 </div>
                 <div className="shadow-2xl p-2 h-60 w-70">
                   <Image
                   width={70}
                   height={60}
-                  src={"/Hand1.jpeg"}
+                  src={"/axis5.jpeg"}
                   alt="1"
                   className="w-65  h-45"/>
-                  <p className="mt-3 text-yellow-300 font-bold">PHASE 1</p>
+                  <p className="mt-3 text-yellow-300 font-bold">PHASE 5</p>
 
                 </div>
               </div>
@@ -128,7 +128,7 @@ export default function Abujaneighb(){
                   <Image
                   width={70}
                   height={60}
-                  src={"/Hand1.jpeg"}
+                  src={"/list1.jpg"}
                   alt="1"
                   className="w-65  h-35"/>
                   <p className="text-2xl p-2">7 Bedroom Detached Duplex</p>
@@ -146,7 +146,7 @@ export default function Abujaneighb(){
                   <Image
                   width={70}
                   height={60}
-                  src={"/Hand1.jpeg"}
+                  src={"/list2.jpg"}
                   alt="1"
                   className="w-65  h-35"/>
                   <p className="text-2xl p-2">Newly Built 6 Bedroom With Boys Quarters</p>
@@ -163,7 +163,7 @@ export default function Abujaneighb(){
                   <Image
                   width={70}
                   height={60}
-                  src={"/Hand1.jpeg"}
+                  src={"/list3.jpg"}
                   alt="1"
                   className="w-65  h-35"/>
                   <p className="text-2xl p-2">Newly Built 4 Bedroom Duplex</p>
@@ -185,7 +185,7 @@ export default function Abujaneighb(){
                   <Image
                   width={70}
                   height={60}
-                  src={"/Hand2.jpeg"}
+                  src={"/list4.jpg"}
                   alt="1"
                   className="w-65  h-35"/>
                   <p className="text-2xl p-2">7 bedroom Duplex With Bq ( Tarred Road )</p>
@@ -203,7 +203,7 @@ export default function Abujaneighb(){
                   <Image
                   width={70}
                   height={60}
-                  src={"/Hand2.jpeg"}
+                  src={"/list5.jpg"}
                   alt="1"
                   className="w-65  h-35"/>
                   <p className="text-2xl p-2">5 Bedroom Detached Duplex</p>
@@ -221,7 +221,7 @@ export default function Abujaneighb(){
                   <Image
                   width={70}
                   height={60}
-                  src={"/Hand2.jpeg"}
+                  src={"/list6.jpeg"}
                   alt="1"
                   className="w-65  h-35"/>
                   <p className="text-2xl p-2">Lovely 7 Bedroom Apartment</p>

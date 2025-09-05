@@ -16,7 +16,7 @@ export default function Duplex(){
                                               <Image
                                               width={100}
                                               height={100}
-                                              src={"/Image2.jpg"}
+                                              src={"/duplex1.png"}
                                               alt="2"
                                               className="w-80 ml-10 my-3 h-60"/>
                                              </div>
@@ -41,7 +41,7 @@ export default function Duplex(){
                                               <Image
                                               width={100}
                                               height={100}
-                                              src={"/Image2.jpg"}
+                                              src={"/duplex2.jpg"}
                                               alt="2"
                                               className="w-80 ml-10 my-3 h-60"/>
                                              </div>
@@ -67,7 +67,7 @@ export default function Duplex(){
                                               <Image
                                               width={100}
                                               height={100}
-                                              src={"/Image2.jpg"}
+                                              src={"/duplex3.jpg"}
                                               alt="2"
                                               className="w-80 ml-10 my-3 h-60"/>
                                              </div>
@@ -88,12 +88,12 @@ export default function Duplex(){
                                              </div>
                       
                                           </div>
-       <div className="flex gap-10 w-95 mt-10 shadow-lg h-full md:w-220 lg:w-220">
+                                          <div className="flex gap-10 w-95 mt-10 shadow-lg h-full md:w-220 lg:w-220">
                                              <div className="shadow-xl w-100 bg-gray-200">
                                               <Image
                                               width={100}
                                               height={100}
-                                              src={"/Image2.jpg"}
+                                              src={"/duplex4.jpg"}
                                               alt="2"
                                               className="w-80 ml-10 my-3 h-60"/>
                                              </div>
