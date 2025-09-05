@@ -26,7 +26,7 @@ export default function Home(){
        className="mySwiper w-full h-[400px] lg:h-[600px] cursor-grab">
         <SwiperSlide className="w-full h-full relative">
          <Image
-         src={"/Whitehouse1.avif"}
+         src={"/whitehouse1.avif"}
          alt="2"
          fill/>
          <div className="absolute  bottom-10 left-5 lg:left-15">
@@ -41,7 +41,7 @@ export default function Home(){
         </SwiperSlide>
         <SwiperSlide className="w-full h-full">
          <Image
-         src={"/Whitehouse5.avif"}
+         src={"/whitehouse5.avif"}
          alt="2"
          fill/>
          <div className="absolute bottom-10 left-5 lg:left-15">
@@ -56,7 +56,7 @@ export default function Home(){
         </SwiperSlide>
         <SwiperSlide className="w-full h-full">
          <Image
-         src={"/Whitehouse2.avif"}
+         src={"/whitehouse2.avif"}
          alt="2"
          fill/>
          <div className="absolute bottom-10 left-5 lg:left-15">
@@ -71,7 +71,7 @@ export default function Home(){
         </SwiperSlide>
         <SwiperSlide className="w-full h-full">
          <Image
-         src={"/Whitehouse4.avif"}
+         src={"/whitehouse4.avif"}
          alt="2"
          fill/>
          <div className="absolute bottom-10 left-5 lg:left-15">
@@ -93,7 +93,7 @@ export default function Home(){
           <Image
           width={50}
           height={50}
-          src={"/Logo2.jpg"}
+          src={"/logo2.jpg"}
           alt="2"
           className="w-15 h-15"/>
           <h1 className="text-white font-bold">ALABI<span className="text-yellow-300 font-bold">HOUSING</span><span className="text-xs text-white">LMT</span></h1>
@@ -107,7 +107,7 @@ export default function Home(){
             <Image
             width={170}
             height={150}
-            src={"/Hand1.jpeg"}
+            src={"/hand1.jpeg"}
             alt="2"
             className="h-80 w-100"/>
           </div>
@@ -115,7 +115,7 @@ export default function Home(){
             <Image
             width={170}
             height={150}
-            src={"/Hand2.jpeg"}
+            src={"/hand2.jpeg"}
             alt="2"
             className="h-80 w-100"/>
           </div>
@@ -123,7 +123,7 @@ export default function Home(){
             <Image
             width={170}
             height={150}
-            src={"/Hand3.jpeg"}
+            src={"/hand3.jpeg"}
             alt="2"
             className="h-80 w-100"/>
           </div>
@@ -131,7 +131,7 @@ export default function Home(){
             <Image
             width={170}
             height={150}
-            src={"/Hand4.jpeg"}
+            src={"/hand4.jpeg"}
             alt="2"
             className="h-80 w-100"/>
           </div>
@@ -139,7 +139,7 @@ export default function Home(){
             <Image
             width={170}
             height={150}
-            src={"/Hand6.jpeg"}
+            src={"/hand6.jpeg"}
             alt="2"
             className="h-80 w-100"/>
           </div>
@@ -147,7 +147,7 @@ export default function Home(){
             <Image
             width={170}
             height={150}
-            src={"/Shouse1.jpg"}
+            src={"/shouse1.jpg"}
             alt="2"
             className="h-80 w-100"/>
           </div>
