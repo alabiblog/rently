@@ -1,13 +1,19 @@
+"use client"
+
 import Image from "next/image";
 import { HiFire } from "react-icons/hi";
 import { FaPhone } from "react-icons/fa6";
 import { IoLogoWhatsapp } from "react-icons/io";
 import Link from "next/link";
+import { Swiper,SwiperSlide } from "swiper/react";
+import "swiper/css"
+import "swiper/css/pagination"
+import {Pagination, Autoplay} from "swiper/modules";
 
 
 export default function Rent(){
     return(
-        <main className="min-h-screen max-w-screen">
+        <main className="min-h-screen max-w-screen bg-gray-200">
              <p className="p-5 lg:block text-sm text-gray-500 md:p-10 lg:p-10"><Link href={"/"}>Home</Link> → <span className="text-sm text-gray-200 text-gray-500"><Link href={"/components/rent"}>Flat Apartment for Rent</Link></span></p>
              <p className="text-2xl text-gray-500 p-4 font-bold">Flat & Apartment For <span className="text-yellow-300">RENT</span> in Nigeria.</p>
              <p className="hidden lg:block mx-5 py-5">The average price of houses for rent is <span className="font-bold">₦3,482,829</span> The most expensive house costs <span className="font-bold">₦50,000,000.</span> while the cheapest costs <span className="font-bold">₦50,000.</span> We have a total of <span className="font-bold">11,178</span> Flat Apartment for rent in Nigeria updated on 03 Sep 2025. Among these properties are houses, lands, shops, apartments, flats and commercial spaces . Every Real Estate in Nigeria posted on this site is verified by real estate agents . We also have cheap houses for rent and cheap houses for sale . Refine your property search by price, number of beds and type of property.</p>
@@ -183,7 +189,7 @@ export default function Rent(){
                     </div>
                     
                 </div>
-                <div className="relative mt-10 ml-3  w-95  h-250  md:ml-0 lg:ml-0 md:w-90 lg:w-90">
+                <div className="relative mt-10 ml-3  w-95  h-350  md:ml-0 lg:ml-0 md:w-90 lg:w-90">
                     <div className="mt-1 border rounded-xl my-5  w-90">
                         <h1 className="text-lg  p-3 ml-2 font-bold">Available Properties</h1>
                         <hr className="mx-5"/>
@@ -236,16 +242,96 @@ export default function Rent(){
                     <hr className="mt-2 mx-5"/>
                     <Link href={"/components/neighbourh"}><p className="p-4 text-sm">Discover which neighbourhood in Nigeria is the best place to live</p></Link>
                    </div>
-                   <div className="rounded-xl border mx-5 lg:mx-0 md:mx-0 h-60 mt-20">
-
+                   <div className="rounded-xl  mx-5 lg:mx-0 md:mx-0 h-60 mt-20">
+                     <Image
+                    width={200}
+                    height={200}
+                    src={"/banner1.jpg"}
+                    alt="mini"
+                    className="h-60 w-100"/>
                    </div>
-                    
+                
+                    <Swiper
+                 modules={[Autoplay,Pagination]}
+                   autoplay={{
+                   display: 3000,
+                   disableOnInteraction: false
+                   }}
+                   pagination={{clickable: true}}
+                   loop={true}
+                    speed={1}
+                   className="rounded-xl border mx-5 lg:mx-0 md:mx-0 h-95 mt-20">
+                   <SwiperSlide className="border">
+                    <h1 className="font-bold p-5">Recent Sold</h1>
+                   <hr className="mx-5"/>
+                    <Image
+                     width={150}
+                     height={150}
+                    src={"/sll1.jpg"}
+                    alt="mini"
+                    className="w-90 p-10 h-60 ml-2 md:ml-0 lg:ml-0"
+                    />
+                    <h1 className="font-bold ml-5">4 Bedroom Semi Duplex Dq Lagos Chevron</h1>
+                    </SwiperSlide>
+                   <SwiperSlide className="border">
+                   <h1 className="font-bold p-5">Recent Sold</h1>
+                   <hr className="mx-5"/>
+                    <Image
+                     width={150}
+                     height={150}
+                    src={"/sll2.jpeg"}
+                    alt="mini"
+                    className="w-90 p-10 h-60 ml-2 md:ml-0 lg:ml-0"
+                    />
+                    <h1 className="font-bold ml-5">5 Bedroom Detached Duplex Lagos Banana Island</h1>
+                   </SwiperSlide>
+                   <SwiperSlide className="border">
+                   <h1 className="font-bold p-5">Recent Sold</h1>
+                   <hr className="mx-5"/>
+                    <Image
+                     width={150}
+                     height={150}
+                    src={"/sll3.jpg"}
+                    alt="mini"
+                    className="w-90 p-10 h-60 ml-2 md:ml-0 lg:ml-0"
+                    />
+                    <h1 className="font-bold ml-5">Land For Sale 400 x 700 Abuja Maitama</h1>
+                   </SwiperSlide>
+                   </Swiper>
+                   </div>
                 </div>
                 
+                
+                <div className="w-90 lg:w-310 lg:ml-5 rounded-xl border mx-5 lg:mx-0 md:mx-0 h-100 mt-20">
+                    <div className="border w-80 lg:w-310 my-2 mx-5">
+                        <h1 className="font-bold p-3 text-gray-500">Average House Price for last month</h1>
+                        <p className="font-semibold ml-3 text-2xl">NGN <span className="font-semibold "> 0.0</span></p>
+                        <h1 className="font-bold p-3 text-gray-500 mt-5">Price Change in last 6 months</h1>
+                        <p className="font-semibold ml-3 text-2xl text-green-600">NGN <span className="font-semibold "> 0.0</span></p>
+                    </div>
+                        <h1 className="text-lg p-3 font-semibold">Historical Price</h1>
+                        <div>
+                            <div className="flex justify-between p-2">
+                            <p className="text-sm">6 Month Ago</p>
+                            <p className="font-bold">NGN 0.0</p>
+                            <p className="border text-white bg-green-700 opacity-40 w-10 text-center rounded">0.00</p>
+                             </div>
+                            <div className="flex justify-between p-2">
 
-    
+                             <p className="text-sm">1 Year Ago</p>
+                            <p className="font-bold">NGN 0.0</p>
+                            <p className="border text-white bg-green-700 opacity-40 w-10 text-center rounded">0.00</p>
+                             </div>
+                            <div className="flex justify-between p-2">
+                             
+                             <p className="text-sm">2 Years Ago</p>
+                            <p className="font-bold">NGN 0.0</p>
+                            <p className="border text-white bg-green-700 opacity-40 w-10 text-center rounded">0.00</p>
+                             </div>
+                            
+                        </div>
 
-            </div>
+                </div>
         </main>
     )
 }

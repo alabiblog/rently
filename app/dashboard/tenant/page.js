@@ -64,7 +64,7 @@ export default function Tenant(){
       validationSchema:schema
     })
     return(
-        <main className="min-h-screen bg-[url(/Whitehouse1.avif)]  bg-cntain bg-no-repeat">
+        <main className="min-h-screen bg-[url(/whitehouse1.avif)]  bg-cntain bg-no-repeat">
             <form  onSubmit={handleSubmit} className="flex justify-center min-h-screen max-w-screen">
 
                 <div className="shadow-lg w-150 py-10">

@@ -16,7 +16,7 @@ export default function Home(){
             <Swiper
        modules={[Autoplay,Pagination]}
        autoplay={{
-         display: 3000,
+         display: 2000,
          disableOnInteraction: false
        }}
        pagination={{clickable: true}}

@@ -3,7 +3,7 @@ import Link from "next/link"
 
 export default function Neighbourh(){
     return(
-        <main className="max-w-screen">
+        <main className="max-w-screen bg-gray-200">
            <h1 className="text-lg mt-15 text-center md:text-4xl lg:text-4xl font-semibold">All State NeighbourHoods</h1>
         <div className="ml-7  md:ml-5 xl:ml-10 lg:ml-5 mt-5 md:grid md:grid-cols-3">
             <Link href={"/components/abujaneighb"}><div className="relative w-80 lg:w-80 h-55 xl:w-100 ">

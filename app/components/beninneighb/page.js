@@ -8,7 +8,7 @@ import { GiBathtub } from "react-icons/gi";
 import { LiaToiletSolid } from "react-icons/lia";
 
 
-export default function Abujaneighb(){
+export default function Beninneighb(){
   const[activeTab,setActiveTab]= useState("rent")
   const [visible,setVisible]= useState(false)
   const [visiblee,setVisiblee]= useState(false)
@@ -16,7 +16,7 @@ export default function Abujaneighb(){
   const [view,setView]= useState(false)
 
     return(
-        <main className="min-h-screen md:flex md:gap-5">
+        <main className="min-h-screen md:flex md:gap-5 bg-gray-200">
             <div>
             <div className="ml-10 mt-10 w-70 h-100 border  md:ml-15  lg:ml-15">
               <h1 className="text-lg p-5 font-semibold">Quick Link</h1>

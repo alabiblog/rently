@@ -9,7 +9,7 @@ export default async function Login(){
      const session = await auth();
      console.log(session);
     return(
-        <main className="min-h-screen flex justify-center bg-[url(/Whitehouse1.avif)]  bg-cntain bg-no-repeat">
+        <main className="min-h-screen flex justify-center bg-[url(/whitehouse1.avif)]  bg-cntain bg-no-repeat">
             <div className="w-120 mt-5 shadow">
               <form>
                 <h1 className="text-2xl lg:text-3xl font-semibold text-center p-5">Sign Up</h1>
