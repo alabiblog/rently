@@ -8,7 +8,7 @@ import { GiBathtub } from "react-icons/gi";
 import { LiaToiletSolid } from "react-icons/lia";
 
 
-export default function Abujaneighb(){
+export default function Akwaibomneighb(){
   const[activeTab,setActiveTab]= useState("rent")
   const [visible,setVisible]= useState(false)
   const [visiblee,setVisiblee]= useState(false)
@@ -38,19 +38,21 @@ export default function Abujaneighb(){
               </div>
               <div className="mt-5 ml-10 ">
                 <div>
-              <button className="p-2 text-white shadow  px-5 bg-gray-300 rounded-lg">Abuja listing for Rent</button>
+              <button className="p-2 text-white shadow  px-5 bg-gray-300 rounded-lg">Akwaibom listing for Rent</button>
               </div>
               <div>
-              <button className="p-2 text-white shadow mt-2 px-5 bg-yellow-300 rounded-lg">Abuja listing for Sele</button>
+              <button className="p-2 text-white shadow mt-2 px-5 bg-yellow-300 rounded-lg">Akwaibom listing for Sele</button>
               </div>
               
               </div>
               </div>
               <div className="w-95 mt-5 md:w-220 lg:w-220  border">
-              <h1 className="text-2xl font-semibold mt-5 ml-5">ABUJA</h1>
-              <p className="p-5">Abuja is the capital city of Nigeria, located in the central part of the country. It became the capital in 1991, replacing Lagos, to promote a more centralized location for governance. The city is known for its modern infrastructure, wide streets, and prominent landmarks, such as the Nigerian National Mosque, Nigerian National Christian Centre, and Aso Rock, a massive rock formation that overlooks the city.
-                Abuja is a planned city, designed with orderliness in mind, and is home to many foreign embassies, government buildings, and important institutions. The city is also known for its diverse population and cultural richness, drawing people from various parts of Nigeria and the world. Its growing economy is driven by sectors such as real estate, commerce, tourism, and hospitality. Abuja also has several upscale neighborhoods, making it a desirable location for both locals and expatriates.
-                In addition to its administrative importance, Abuja has also become a hub for events, conferences, and exhibitions, thanks to its state-of-the-art facilities. The city enjoys a relatively stable environment compared to other Nigerian cities, contributing to its appeal for business and tourism.</p>
+              <h1 className="text-2xl font-semibold mt-5 ml-5">Akwaibom</h1>
+              <p className="p-5">Akwa Ibom State is a state located in the southern part of Nigeria. It is one of the 36 states in the country and was created on September 23, 1987. The state is named after the Qua Iboe River, which forms one of its boundaries. Akwa Ibom State is known for its rich oil reserves, agricultural resources, and tourist attractions.
+
+Akwa Ibom State is divided into 31 local government areas (LGAs), each with its own local government administrationLying between Latitudes 4o 32” and 5o 33” North and Longitudes 7o 35” and 8o 25” East, the State is bounded on the East by Rivers State, on the West by Cross River State, on the North by Abia State and on the South by the Gulf of Guinea.
+
+Akwa Ibom State currently covers a total land area of 7,249 square kilometers. The area does not take into consideration disputed territories. It is the 10th largest state in Nigeria in terms of landmass. About 13.4 percent of the 960km of Nigeria’s Atlantic Ocean coastline runs through the State.</p>
               <hr className="mt-5 mx-5"/>
               <h1 className="text-2xl font-semibold mt-5 ml-5">Axis</h1>
               <div className="ml-12 mt-15 md:ml-5 lg:ml-5 lg:grid lg:grid-cols-3">
@@ -71,7 +73,7 @@ export default function Abujaneighb(){
                   src={"/axis22.jpeg"}
                   alt="1"
                   className="w-65  h-45"/>
-                  <p className="mt-3 text-yellow-300 font-bold">PHASE 1</p>
+                  <p className="mt-3 text-yellow-300 font-bold">PHASE 2</p>
 
                 </div>
                 <div className="shadow-2xl p-2 h-60 w-70">
@@ -81,7 +83,7 @@ export default function Abujaneighb(){
                   src={"/axis33.jpeg"}
                   alt="1"
                   className="w-65  h-45"/>
-                  <p className="mt-3 text-yellow-300 font-bold">PHASE 1</p>
+                  <p className="mt-3 text-yellow-300 font-bold">PHASE 3</p>
 
                 </div>
                 <div className="shadow-2xl p-2 h-60 w-70">
@@ -91,7 +93,7 @@ export default function Abujaneighb(){
                   src={"/axis44.jpeg"}
                   alt="1"
                   className="w-65  h-45"/>
-                  <p className="mt-3 text-yellow-300 font-bold">PHASE 1</p>
+                  <p className="mt-3 text-yellow-300 font-bold">PHASE 4</p>
 
                 </div>
                 <div className="shadow-2xl p-2 h-60 w-70">
@@ -101,11 +103,11 @@ export default function Abujaneighb(){
                   src={"/axis55.jpeg"}
                   alt="1"
                   className="w-65  h-45"/>
-                  <p className="mt-3 text-yellow-300 font-bold">PHASE 1</p>
+                  <p className="mt-3 text-yellow-300 font-bold">PHASE 5</p>
 
                 </div>
               </div>
-              <h1 className="text-2xl font-semibold mt-5 ml-5">Active Listing in Abuja</h1>
+              <h1 className="text-2xl font-semibold mt-5 ml-5">Active Listing in Akwaibom</h1>
               <div className="flex gap-10 mt-10 ml-5">
                  <button onClick={() => setActiveTab("rent")} className={`px-4 py-2 rounded-lg font-medium transition ${ activeTab === "rent"? "bg-blue-600 text-white": "bg-gray-200 text-gray-700 hover:bg-gray-300"}`}>For Rent</button>
         <button
@@ -132,13 +134,13 @@ export default function Abujaneighb(){
                   alt="1"
                   className="w-65  h-35"/>
                   <p className="text-2xl p-2">7 Bedroom Detached Duplex</p>
-                  <p className="text-xs p-2">Diplomatic Zone Katampe Ext Abuja</p>
+                  <p className="text-xs p-2">Along Airport Road Uyo Akwaibom</p>
                    <div className="grid grid-cols-2 mt-5">
                     <p className="flex items-center gap-3"><IoBedOutline className="text-3xl"/> 7 Beds</p>
                     <p className="flex items-center gap-3"><GiBathtub className="text-3xl"/> 7 Baths</p>
                     <p className="flex items-center gap-3 mt-3"><LiaToiletSolid className="text-3xl"/> 8 Toilets</p>
                    </div>
-                   <p className="text-1xl p-2 mt-5 font-bold ">₦ 40,000,000/Yearly</p>
+                   <p className="text-1xl p-2 mt-5 font-bold ">₦ 70,000,000/Yearly</p>
                     
                 </div>
                 <div className="shadow p-2 h-110 w-70">
@@ -150,13 +152,13 @@ export default function Abujaneighb(){
                   alt="1"
                   className="w-65  h-35"/>
                   <p className="text-2xl p-2">Newly Built 6 Bedroom With Boys Quarters</p>
-                  <p className="text-xs p-2">Wuye Abuja</p>
+                  <p className="text-xs p-2">uyo Akwaibom</p>
                    <div className="grid grid-cols-2 mt-5">
                     <p className="flex items-center gap-3"><IoBedOutline className="text-3xl"/> 6 Beds</p>
                     <p className="flex items-center gap-3"><GiBathtub className="text-3xl"/> 6 Baths</p>
                     <p className="flex items-center gap-3 mt-3"><LiaToiletSolid className="text-3xl"/> 7 Toilets</p>
                    </div>
-                   <p className="text-1xl p-2 mt-5 font-bold ">₦ 30,000,000/Yearly</p>
+                   <p className="text-1xl p-2 mt-5 font-bold ">₦ 20,000,000/Yearly</p>
                   
                 </div>
                 <div className="shadow p-2 h-110 w-70">
@@ -167,7 +169,7 @@ export default function Abujaneighb(){
                   alt="1"
                   className="w-65  h-35"/>
                   <p className="text-2xl p-2">Newly Built 4 Bedroom Duplex</p>
-                  <p className="text-xs p-2">Life Camp Abuja</p>
+                  <p className="text-xs p-2">African Road Akwaibom</p>
                    <div className="grid grid-cols-2 mt-5">
                     <p className="flex items-center gap-3"><IoBedOutline className="text-3xl"/> 4 Beds</p>
                     <p className="flex items-center gap-3"><GiBathtub className="text-3xl"/> 4 Baths</p>

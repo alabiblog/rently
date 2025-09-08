@@ -16,7 +16,7 @@ import { IoSearch } from "react-icons/io5";
 export function Navbar(){
     const[visible,setVisible]= useState(false)
     return(
-        <main className="bg-gray-200 shadow-2xl md:w-315 lg:w-315 ">
+        <main className="bg-gray-200 shadow-2xl md:w-250 lg:w-250 xl:w-full ">
     <div className="relative flex justify-between">
     <div className="flex gap-1 p-2  mt-1 lg:mt-0 lg:p-5">
        <Image
@@ -55,7 +55,7 @@ export function Navbar(){
          <Link href={"/dashboard/profile"}><small className="font-bold text-2xl text-yellow-300"><CgProfile /></small></Link>
          
         </div>}
-        <div className="h-55  bg-white shadow-xl shadow-black bg-[url(/whitehouse1.avif)]  bg-cntain bg-no-repeat">
+        <div className="h-55   bg-white shadow-xl shadow-black bg-[url(/whitehouse1.avif)]  bg-cntain bg-no-repeat">
             <div className="relative p-2 flex items-center ml-">
            <IoSearch 
             className="text-2xl absolute left-3"/>

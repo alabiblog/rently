@@ -46,66 +46,18 @@ export default function Adamawaneighb(){
               
               </div>
               </div>
-              <div className="w-95 mt-5 md:w-220 lg:w-220  border">
+              <div className="w-95 mt-5 md:w-220 lg:w-220 ">
               <h1 className="text-2xl font-semibold mt-5 ml-5">ADAMAWA</h1>
-              <p className="p-5">Adamawa is the capital city of Nigeria, located in the central part of the country. It became the capital in 1991, replacing Lagos, to promote a more centralized location for governance. The city is known for its modern infrastructure, wide streets, and prominent landmarks, such as the Nigerian National Mosque, Nigerian National Christian Centre, and Aso Rock, a massive rock formation that overlooks the city.
-                Adamawa is a planned city, designed with orderliness in mind, and is home to many foreign embassies, government buildings, and important institutions. The city is also known for its diverse population and cultural richness, drawing people from various parts of Nigeria and the world. Its growing economy is driven by sectors such as real estate, commerce, tourism, and hospitality. Abuja also has several upscale neighborhoods, making it a desirable location for both locals and expatriates.
-                In addition to its administrative importance, Abuja has also become a hub for events, conferences, and exhibitions, thanks to its state-of-the-art facilities. The city enjoys a relatively stable environment compared to other Nigerian cities, contributing to its appeal for business and tourism.</p>
+              <p className="p-5">Adamawa is a state in northeastern Nigeria, with Yola as its capital. Known for its agricultural richness, the state produces crops like maize and sorghum and is home to livestock farming. It features diverse landscapes, including the Mandara Mountains and Gashaka-Gumti National Park, making it a potential tourism destination.
+
+Adamawa is culturally diverse, with ethnic groups like the Fulani and Bachama. Despite its natural resources and cultural wealth, the state faces challenges such as security concerns and infrastructure gaps.</p>
               <hr className="mt-5 mx-5"/>
-              <h1 className="text-2xl font-semibold mt-5 ml-5">Axis</h1>
-              <div className="ml-12 mt-15 md:ml-5 lg:ml-5 lg:grid lg:grid-cols-3">
-                <div className="shadow-2xl p-2 h-60 w-70">
-                  <Image
-                  width={70}
-                  height={60}
-                  src={"/Hand1.jpeg"}
-                  alt="1"
-                  className="w-65  h-45"/>
-                  <p className="mt-3 text-yellow-300 font-bold">PHASE 1</p>
+              <h1 className="text-2xl font-semibold mt-5 ml-5">Summery</h1>
+              <p className="mt-5 ml-5">Adamawa is a northeastern Nigerian state known for its rich cultural heritage, diverse ethnic groups, and agricultural economy, with Yola as its capital. Life in Adamawa is a blend of rural and urban influences, where farming, fishing, and trading dominate daily activities. The people are hospitable, and the state hosts various cultural festivals that reflect its deep-rooted traditions. Expect a warm climate, vibrant local markets, and a mix of modern and traditional lifestyles.
 
-                </div>
-                <div className="shadow-2xl p-2 h-60 w-70">
-                  <Image
-                  width={70}
-                  height={60}
-                  src={"/Hand1.jpeg"}
-                  alt="1"
-                  className="w-65  h-45"/>
-                  <p className="mt-3 text-yellow-300 font-bold">PHASE 1</p>
-
-                </div>
-                <div className="shadow-2xl p-2 h-60 w-70">
-                  <Image
-                  width={70}
-                  height={60}
-                  src={"/Hand1.jpeg"}
-                  alt="1"
-                  className="w-65  h-45"/>
-                  <p className="mt-3 text-yellow-300 font-bold">PHASE 1</p>
-
-                </div>
-                <div className="shadow-2xl p-2 h-60 w-70">
-                  <Image
-                  width={70}
-                  height={60}
-                  src={"/Hand1.jpeg"}
-                  alt="1"
-                  className="w-65  h-45"/>
-                  <p className="mt-3 text-yellow-300 font-bold">PHASE 1</p>
-
-                </div>
-                <div className="shadow-2xl p-2 h-60 w-70">
-                  <Image
-                  width={70}
-                  height={60}
-                  src={"/Hand1.jpeg"}
-                  alt="1"
-                  className="w-65  h-45"/>
-                  <p className="mt-3 text-yellow-300 font-bold">PHASE 1</p>
-
-                </div>
-              </div>
-              <h1 className="text-2xl font-semibold mt-5 ml-5">Active Listing in Abuja</h1>
+The markets, such as Jimeta Modern Market, are hubs for trade and commerce, offering fresh produce and handcrafted goods. What you’ll fall in love with is the breathtaking landscape, including the Mandara Mountains and the serene Benue River. Adamawa shares borders with states like Borno, Gombe, and Taraba, as well as Cameroon, enriching its cultural diversity.</p>
+              
+               
               <div className="flex gap-10 mt-10 ml-5">
                  <button onClick={() => setActiveTab("rent")} className={`px-4 py-2 rounded-lg font-medium transition ${ activeTab === "rent"? "bg-blue-600 text-white": "bg-gray-200 text-gray-700 hover:bg-gray-300"}`}>For Rent</button>
         <button
@@ -241,13 +193,13 @@ export default function Adamawaneighb(){
               <div>
               <h1 className="text-2xl font-semibold mt-5 ml-5">Side Attraction</h1>
                 <button onClick={()=>setVisible(!visible)} className="mt-3 ml-5 text-1xl font-bold text-yellow-300">{visible? "What You'll Fall Inlove With -" : "What You'll Fall Inlove With +"}</button><br/>
-               {visible && <p className="p-5">Abuja, you'll fall in love with the stunning scenic views, including the iconic Aso Rock and Jabi Lake, which offer a serene and picturesque environment. The city's vibrant culture, enriched by its diverse mix of ethnic groups, languages, and traditions, provides a unique experience of Nigerian and international cuisines, festivals, and art. The modern infrastructure, with well-planned roads and sleek buildings, creates an organized and clean atmosphere. Compared to other parts of Nigeria, Abuja’s peace and security offer a comfortable and stable living environment. The growing real estate opportunities in residential and commercial properties make it an attractive investment destination. The friendly atmosphere and cosmopolitan vibe make it easy to connect with both locals and expatriates. Abuja’s rich history and landmarks, such as the Nigerian National Mosque and the National Christian Centre, offer deep cultural significance. Additionally, the constant array of events, from conferences to cultural festivals, ensures there's always something exciting to enjoy.</p>}
+               {visible && <p className="p-5">In Adamawa, you'll fall in love with the breathtaking landscapes, including the Mandara Mountains and Gashaka-Gumti National Park, which offer scenic views and opportunities for outdoor exploration. The rich agricultural environment, with vast farmlands producing crops like maize and sorghum, adds to the state's charm. You'll also be captivated by the cultural diversity, with the vibrant traditions and festivals of ethnic groups like the Fulani and Bachama. The peaceful atmosphere, coupled with the warmth and hospitality of the people, makes Adamawa a place worth discovering.</p>}
                 <button onClick={()=>setVisiblee(!visiblee)} className="mt-3 ml-5 text-1xl font-bold text-yellow-300">{visiblee? "The Market -" : "The Market +"}</button><br/>
-               {visiblee && <p className="p-5">Abuja's market is diverse and dynamic, driven by the city's rapid growth and central role in Nigeria's economy. Key aspects of the market include: 1. Real Estate: The real estate market in Abuja is thriving, with a mix of residential, commercial, and luxury properties. Demand for housing is high, driven by the growing population, expatriates, and government workers. Areas like Wuse, Maitama, and Asokoro are popular for upscale properties. 2. Retail and Wholesale Markets: Abuja has various markets, from traditional open-air markets like Wuse Market and Garki Market, to modern malls such as the Jabi Lake Mall and Ceddi Plaza. These markets offer a range of goods, including local produce, clothing, electronics, and imported items. 3. Agriculture: As a central city, Abuja is a key consumer of agricultural products from neighboring states like Benue and Nasarawa. Fresh produce, grains, and livestock are common in the local markets. 4. Services: Abuja has a growing service sector, including financial institutions, legal services, and IT companies. Many businesses cater to the needs of government agencies, embassies, and international organizations. 5. Tourism: As a cultural and historical hub, Abuja attracts tourists, contributing to the hospitality, leisure, and entertainment industries. Hotels, resorts, and tour services are key components of the tourism market. 6. Technology and Innovation: The tech market in Abuja is expanding, with startups, fintech companies, and digital service providers emerging. The city's infrastructure supports tech development, and there are opportunities for innovation in areas like fintech, e-commerce, and digital services. Overall, the market in Abuja is vibrant, with significant opportunities in real estate, agriculture, retail, services, tourism, and technology.</p>}
+               {visiblee && <p className="p-5">The market in Adamawa is primarily driven by agriculture, with a strong emphasis on the cultivation of crops like maize, sorghum, millet, and groundnuts, alongside livestock farming. The state's agricultural products are key to both local consumption and trade within and outside the region. Adamawa also has a growing retail market, especially in cities like Yola, where goods such as textiles, foodstuffs, and household items are sold in vibrant markets. The state is also rich in natural resources, including minerals like limestone and granite, though the mining sector remains underdeveloped. Despite challenges like infrastructure gaps, Adamawa's market is largely centered around its agricultural output and small-scale commerce.</p>}
                 <button onClick={()=>setVisibleee(!visibleee)} className="mt-3 ml-5 text-1xl font-bold text-yellow-300">{visibleee? "What To Expect -" : "What To Expect +"}</button><br/>
-               {visibleee && <p className="p-5">Abuja offers a modern, well-planned city with a blend of cultural diversity and natural beauty. As Nigeria's political and administrative capital, it houses government institutions and embassies. The city features modern infrastructure, green spaces like Aso Rock, and a growing real estate sector. It is known for its security, stability, and a variety of dining, shopping, and entertainment options. The climate is tropical, with a hot dry season and a rainy season. Overall, Abuja provides a dynamic and vibrant environment for residents and visitors alike.</p>}
+               {visibleee && <p className="p-5">In Adamawa, you can expect a blend of natural beauty, with stunning landscapes like the Mandara Mountains and Gashaka-Gumti National Park, offering opportunities for outdoor activities and wildlife exploration. The state is rich in agriculture, producing crops like maize and sorghum, and cattle farming is common. You'll also experience a culturally diverse environment, with ethnic groups such as the Fulani and Bachama, and the chance to engage in local festivals and traditions. While Adamawa offers natural and cultural attractions, challenges like security concerns and underdeveloped infrastructure may also be present.</p>}
                 <button onClick={()=>setView(!view)} className="mt-3 ml-5 text-1xl font-bold text-yellow-300">{view? "The Neighbour -" : "The Neighbour +"}</button><br/>
-               {view && <p className="p-5">Abuja is bordered by several states in Nigeria, each with its unique characteristics: 1. Nasarawa State (to the east and north): Known as the "Home of Solid Minerals," Nasarawa shares a border with Abuja and is rich in natural resources. It also has a growing agricultural sector. 2. Kogi State (to the west): Kogi is where the Niger and Benue rivers meet and is known for its diverse ethnic groups and rich cultural heritage. 3. Benue State (to the north): Benue, often called the "Food Basket of the Nation," is known for its fertile land and agriculture, especially for producing crops like yam, maize, and rice. 4. Niger State (to the northwest): Niger is the largest state in Nigeria by land area, and its economy is based on agriculture and mineral resources. 5. Kaduna State (to the northwest): A significant economic and cultural hub, Kaduna is known for its historical significance, large industries, and educational institutions. These neighboring states all contribute to Abuja's economic activities, especially in terms of trade, agriculture, and resource sharing.</p>}
+               {view && <p className="p-5">Adamawa shares borders with several states, including Borno to the northwest, Gombe to the west, Taraba to the south, and the northeastern border with Cameroon.</p>}
               </div>
               
               </div>

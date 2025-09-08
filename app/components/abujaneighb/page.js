@@ -16,9 +16,9 @@ export default function Abujaneighb(){
   const [view,setView]= useState(false)
 
     return(
-        <main className="min-h-screen md:flex md:gap-5 bg-gray-200">
-            <div>
-            <div className="ml-10 mt-10 w-70 h-100 border  md:ml-15  lg:ml-15">
+        <main className="min-h-screen max-w-screen md:flex md:gap-5 bg-gray-200">
+            <div className="p-2">
+            <div className="ml-10  w-70 h-100 border  md:ml-15  lg:ml-15">
               <h1 className="text-lg p-5 font-semibold">Quick Link</h1>
               <p className="text-sm ml-5 font-semibold text-gray-400">Overview</p>
               <hr className="mx-5 mt-3"/>
@@ -46,7 +46,7 @@ export default function Abujaneighb(){
               
               </div>
               </div>
-              <div className="w-95 mt-5 md:w-220 lg:w-220  border">
+              <div className="w-95 mt-5 md:w-full lg:w-full  border">
               <h1 className="text-2xl font-semibold mt-5 ml-5">ABUJA</h1>
               <p className="p-5">Abuja is the capital city of Nigeria, located in the central part of the country. It became the capital in 1991, replacing Lagos, to promote a more centralized location for governance. The city is known for its modern infrastructure, wide streets, and prominent landmarks, such as the Nigerian National Mosque, Nigerian National Christian Centre, and Aso Rock, a massive rock formation that overlooks the city.
                 Abuja is a planned city, designed with orderliness in mind, and is home to many foreign embassies, government buildings, and important institutions. The city is also known for its diverse population and cultural richness, drawing people from various parts of Nigeria and the world. Its growing economy is driven by sectors such as real estate, commerce, tourism, and hospitality. Abuja also has several upscale neighborhoods, making it a desirable location for both locals and expatriates.
@@ -54,47 +54,47 @@ export default function Abujaneighb(){
               <hr className="mt-5 mx-5"/>
               <h1 className="text-2xl font-semibold mt-5 ml-5">Axis</h1>
               <div className="ml-12 mt-15 md:ml-5 lg:ml-5 lg:grid lg:grid-cols-3">
-                <div className="shadow-2xl p-2 h-60 w-70">
+                <div className="shadow-2xl p-2 h-60 w-70 lg:w-47 xl:w-70">
                   <Image
                   width={70}
                   height={60}
                   src={"/axis1.jpeg"}
                   alt="1"
-                  className="w-65  h-45"/>
+                  className="w-65   h-45 "/>
                   <p className="mt-3 text-yellow-300 font-bold">PHASE 1</p>
 
                 </div>
-                <div className="shadow-2xl p-2 h-60 w-70">
+                <div className="shadow-2xl p-2 h-60 w-70 lg:w-47 xl:w-70">
                   <Image
                   width={70}
                   height={60}
                   src={"/axis2.jpeg"}
                   alt="1"
-                  className="w-65  h-45"/>
+                  className="w-65  h-45 "/>
                   <p className="mt-3 text-yellow-300 font-bold">PHASE 2</p>
 
                 </div>
-                <div className="shadow-2xl p-2 h-60 w-70">
+                <div className="shadow-2xl p-2 h-60 w-70 lg:w-47 xl:w-70">
                   <Image
                   width={70}
                   height={60}
                   src={"/axis3.jpeg"}
                   alt="1"
-                  className="w-65  h-45"/>
+                  className="w-65  h-45 "/>
                   <p className="mt-3 text-yellow-300 font-bold">PHASE 3</p>
 
                 </div>
-                <div className="shadow-2xl p-2 h-60 w-70">
+                <div className="shadow-2xl p-2 h-60 w-70 lg:w-47 xl:w-70">
                   <Image
                   width={70}
                   height={60}
                   src={"/axix4.jpeg"}
                   alt="1"
-                  className="w-65  h-45"/>
+                  className="w-65  h-45 lg:w-60"/>
                   <p className="mt-3 text-yellow-300 font-bold">PHASE 4</p>
 
                 </div>
-                <div className="shadow-2xl p-2 h-60 w-70">
+                <div className="shadow-2xl p-2 h-60 w-70 lg:w-47 xl:w-70">
                   <Image
                   width={70}
                   height={60}
@@ -124,7 +124,7 @@ export default function Abujaneighb(){
                 {/* first box */}
                {activeTab === "rent" && <div className="  md:grid md:grid-cols-3 lg:grid lg:grid-cols-3">
             
-                <div className="shadow p-2 h-110 w-70">
+                <div className="shadow p-2 h-110 w-70 lg:w-47 xl:w-70">
                   <Image
                   width={70}
                   height={60}
@@ -141,7 +141,7 @@ export default function Abujaneighb(){
                    <p className="text-1xl p-2 mt-5 font-bold ">₦ 40,000,000/Yearly</p>
                     
                 </div>
-                <div className="shadow p-2 h-110 w-70">
+                <div className="shadow p-2 h-110 w-70 lg:w-47 xl:w-70">
                   
                   <Image
                   width={70}
@@ -159,7 +159,7 @@ export default function Abujaneighb(){
                    <p className="text-1xl p-2 mt-5 font-bold ">₦ 30,000,000/Yearly</p>
                   
                 </div>
-                <div className="shadow p-2 h-110 w-70">
+                <div className="shadow p-2 h-110 w-70 lg:w-47 xl:w-70">
                   <Image
                   width={70}
                   height={60}
@@ -180,7 +180,7 @@ export default function Abujaneighb(){
                 </div>}
                 {/* second */}
                {activeTab === "sale" &&  <div className=" md:grid md:grid-cols-3 lg:grid lg:grid-cols-3">
-                  <div className="shadow p-2 h-110 w-70">
+                  <div className="shadow p-2 h-110 w-70 lg:w-47 xl:w-70">
                   
                   <Image
                   width={70}
@@ -198,7 +198,7 @@ export default function Abujaneighb(){
                    <p className="text-1xl p-2 mt-5 font-bold ">₦ 3,000,000,000</p>
                       
                 </div>
-                <div className="shadow p-2 h-110 w-70">
+                <div className="shadow p-2 h-110 w-70 lg:w-47 xl:w-70">
                   
                   <Image
                   width={70}
@@ -216,7 +216,7 @@ export default function Abujaneighb(){
                    <p className="text-1xl p-2 mt-5 font-bold ">₦ 900,000,000</p>
                      
                 </div>
-                <div className="shadow p-2 h-110 w-70">
+                <div className="shadow p-2 h-110 w-70 lg:w-47 xl:w-70">
                   
                   <Image
                   width={70}
@@ -238,6 +238,51 @@ export default function Abujaneighb(){
                 </div>}
               
               </div>
+              <h1 className="text-2xl font-semibold p-2">Photo</h1>
+              <div className="h-70 w-90 mx-2 mt-5  flex justify-center items-center">
+               <Image
+               width={100}
+               height={100}
+               src={"/raw1.jpeg"}
+               alt="1"
+               className="w-90 h-70 rounded"/>
+              </div>
+              <h1 className="text-2xl font-semibold p-2">Sponsored Properties</h1>
+              <div className="flex overflow-x-auto">
+                <div className="flex gap-3">
+                <div className="h-60 w-80 shadow">
+                  <Image
+                  width={100}
+                  height={100}
+                  src={"/zzz1.jpeg"}
+                  alt="1"
+                  className="w-80 h-40"/>
+                  <p className="text-lg font-semibold text-blue-700 p-2">7 Bedroom Mansion  With Bq</p>
+                  <p className="text-xs font-semibold p-2">Gwarinpa Abuja</p>
+                </div>
+                 <div className="h-60 w-80 shadow">
+                  <Image
+                  width={100}
+                  height={100}
+                  src={"/list6.jpeg"}
+                  alt="1"
+                  className="w-80 h-40"/>
+                  <p className="text-lg font-semibold text-blue-700 p-2">4 Bedroom Terraced Duplex   With Bq</p>
+                  <p className="text-xs font-semibold p-2">Gwarinpa Abuja</p>
+                </div>
+                 <div className="h-60 w-80 shadow">
+                  <Image
+                  width={100}
+                  height={100}
+                  src={"/mini3.jpeg"}
+                  alt="1"
+                  className="w-80 h-40"/>
+                  <p className="text-lg font-semibold text-blue-700 p-2">3 Bedroom Flat</p>
+                  <p className="text-xs font-semibold p-2">Paradise Court Estate Idu Abuja</p>
+                </div>
+                </div>
+              </div>
+
               <div>
               <h1 className="text-2xl font-semibold mt-5 ml-5">Side Attraction</h1>
                 <button onClick={()=>setVisible(!visible)} className="mt-3 ml-5 text-1xl font-bold text-yellow-300">{visible? "What You'll Fall Inlove With -" : "What You'll Fall Inlove With +"}</button><br/>
