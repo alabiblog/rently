@@ -1,7 +1,6 @@
 import { auth } from "@/auth"
 import { AuthorizationCheck } from "@/config/authorization/check"
-import Tenant from "./tenant";
-Tenant
+import Rentlist from "./rentlist";
 
 
 
@@ -12,7 +11,7 @@ export default async function Page() {
   return(
     <>
     <AuthorizationCheck/>
-    <Tenant userId={session?.user?.id}/>
+    <Rentlist userId={session?.user?.id}/>
     </>
    )
 }

@@ -57,22 +57,22 @@ export default function Rent(){
                        </div>
                        </div>
                        </div>
-                        <div className="flex gap-10 w-95 mt-10 shadow-lg h-full md:w-220 lg:w-220">
+                        <div className="flex gap-10 w-100 ml-2 mt-10 shadow-lg h-full md:w-220 lg:w-220">
                        <div className="shadow-xl w-100 bg-gray-200">
                         <Image
-                        width={100}
-                        height={100}
+                        width={200}
+                        height={200}
                         src={"/rent2.jpg"}
                         alt="2"
-                        className="w-80 ml-10 my-3 h-60"/>
+                        className="w-200 ml- my-3 h-60"/>
                        </div>
-                       <div className=" w-50 p-4">
+                       <div className=" w-20 md:w-50 lg:w-50">
                         <h1 className="text-lg text-black font-bold">4 Bedroom Flat</h1>
                         <p className="text-xs text-gray-700">Banana island ikoyi Lagos</p>
                         <p className="text-sm text-gray-700 font-semibold">Swimming pool & mini car pack</p>
                         <p className="text-sm text-yellow-300 bg-red-700 border mt-10 text-center">Promo Deal</p>
                        </div>
-                       <div className="mt-5 ml-10">
+                       <div className="mt-5 mr-5">
                         <h1 className="">₦ 40,000,000/Year</h1>
                         <p className="text-xs">PID : 3NHRP</p>
                         <p className="border text-center mt-10 w-23 p-1 rounded text-red-700 flex items-center gap-2 ">sponsor <HiFire className="text-red-700"/></p>
@@ -83,22 +83,22 @@ export default function Rent(){
                        </div>
 
                     </div>
-                     <div className="flex gap-10 w-95 mt-10 shadow-lg h-full md:w-220 lg:w-220">
+                     <div className="flex gap-10 w-100 ml2 mt-10 shadow-lg h-full md:w-220 lg:w-220">
                        <div className="shadow-xl w-100 bg-gray-200">
                         <Image
-                        width={100}
-                        height={100}
+                        width={200}
+                        height={200}
                         src={"/rent3.jpg"}
                         alt="2"
                         className="w-80 ml-10 my-3 h-60"/>
                        </div>
-                       <div className=" w-50 p-4">
+                       <div className=" w-20 md:w-50 lg:w-50">
                         <h1 className="text-lg text-black font-bold">4 Bedroom Flat</h1>
                         <p className="text-xs text-gray-700">Banana island ikoyi Lagos</p>
                         <p className="text-sm text-gray-700 font-semibold">Swimming pool & mini car pack</p>
                         <p className="text-sm text-yellow-300 bg-red-700 border mt-10 text-center">Promo Deal</p>
                        </div>
-                       <div className="mt-5 ml-10">
+                       <div className="mt-5 mr-5">
                         <h1 className="">₦ 40,000,000/Year</h1>
                         <p className="text-xs">PID : 3NHRP</p>
                         <p className="border text-center mt-10 w-23 p-1 rounded text-red-700 flex items-center gap-2 ">sponsor <HiFire className="text-red-700"/></p>
