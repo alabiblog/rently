@@ -3,18 +3,14 @@
 import { FormControl, Input, InputLabel, MenuItem, Select, TextField } from "@mui/material";
 import Image from "next/image";
 import { useState } from "react";
-import { RxHamburgerMenu } from "react-icons/rx";
 import { CgProfile } from "react-icons/cg";
 import Link from "next/link";
 import { IoSearch } from "react-icons/io5";
+import { RxHamburgerMenu } from "react-icons/rx";
 
 
-
-
-
-
-export function Navbar(){
-    const[visible,setVisible]= useState(false)
+export  function Navbar(){
+    const [visible,setVisible]= useState(false)
     return(
         <main className="bg-gray-200 shadow-2xl md:w-250 lg:w-250 xl:w-full ">
     <div className="relative flex justify-between">
@@ -34,8 +30,9 @@ export function Navbar(){
         <Link href={"/auth/login"}><h1 className="text-white font-bold">Login</h1></Link>
         
     </div>
-    
-   <button onClick={()=>setVisible(!visible)} className="text-5xl mr-4 mb-7 text-yellow-300 md:hidden lg:hidden">{visible? "✕" : <RxHamburgerMenu />} </button>
+    <button onClick={()=>setVisible(!visible)}>{visible? "" : <RxHamburgerMenu className="text-3xl mr-2 mt-2 lg:hidden md:hidden"/>}</button>
+          
+
   
     <div className="hidden lg:flex lg:mr-5 lg:gap-2  lg:mt-5  lg:block">
         
@@ -43,21 +40,32 @@ export function Navbar(){
         type="search"
         placeholder="Investment Option"
         className="border p-1 bg-yellow-300  rounded-xl mb-15 font-bold"/>
-        
-       <Link href={"/dashboard/profile"}><CgProfile className="text-4xl text-yellow-300"/></Link>
-       
+        <Link href={"/dashboard/profile"}><CgProfile className="text-4xl text-yellow-300"/></Link>
       </div>
       </div>
-    {visible &&<div className="bg-teal-50 flex h-10  gap-6 p-2 lg:hidden">
-         <Link href="/"><small className="font-bold p-1">Home</small></Link>
-         <Link href={"/dashboard/tenant"}><small className="font-bold">Tenant-Form</small></Link>
-         <Link href={"/auth/login"}><small className="font-bold">Login</small></Link>
-       <Link href="/dashboard/rentlist"><h1 className="text-white font-bold">Rent-List</h1></Link> 
-         <small className="font-bold p-1">Contact Us</small>
-         <Link href={"/dashboard/profile"}><small className="font-bold text-2xl text-yellow-300"><CgProfile /></small></Link>
-         
-        </div>}
+       <div 
+      className={`fixed top-0 right-0 z-50 bg-black w-full h-full duration-1000 ease-in-out ${visible? "translate-x-0" : "translate-x-full"}`}>
+       <button onClick={()=>setVisible(false)} className="text-yellow-300 text-4xl absolute right-3 top-5">X</button>
+       <div className="text-center py-20">
+         <Link href="/" onClick={()=>setVisible(false)}><p className="text-2xl text-gray-100 ">Home</p></Link>
+        <Link href={"/dashboard/tenant"}onClick={()=>setVisible(false)}><p className="text-2xl text-gray-100">Tenant-Form</p></Link>
+        <Link href="/dashboard/rentlist"onClick={()=>setVisible(false)}><p className="text-2xl text-gray-100">Rent-List</p></Link>
+        <p className="text-2xl text-gray-100">Contact-Us</p>
+       <Link href={"/auth/login"}onClick={()=>setVisible(false)}><p className="text-2xl text-gray-100">Login</p></Link>
+       <div className="flex justify-center mt-2">
+       <Link href={"/dashboard/profile"}onClick={()=>setVisible(false)}> <p className="text-2xl text-gray-100"><CgProfile className="text-2xl text-yellow-3"/></p></Link>
+        </div>
+       </div>
+      
+      
+      </div>
+    
        
     </main>
     )
-}
+
+
+
+    }
+    
+    

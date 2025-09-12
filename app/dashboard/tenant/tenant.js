@@ -1,7 +1,7 @@
 "use client"
 
 import { db } from "@/config/firebase.config";
- import { Button, Dialog, DialogActions, DialogContent, DialogTitle, FormControl, InputLabel, MenuItem, Select, TextField, Typography } from "@mui/material";
+import { Button, Dialog, DialogActions, DialogContent, DialogTitle, FormControl, InputLabel, MenuItem, Select, TextField, Typography } from "@mui/material";
 import { addDoc, collection } from "firebase/firestore";
 import { useFormik } from "formik";
 import * as yup from "yup"
@@ -27,10 +27,10 @@ const schema = yup.object().shape({
 })
 
 
-export default function Tenant(){
+export default async function Tenant(){ 
     const[open,setOpen]= useState(false)
-    const {data : session}= useSession();
-    console.log(session)
+     const {data : session}= useSession();
+     console.log(session)
     const handleClose = ()=>{
         setOpen(false)
     }
@@ -64,7 +64,7 @@ export default function Tenant(){
         })
         .catch((error)=>{
             console.error
-            setOpenfalse
+            setOpen(false)
             alert("Unable To Submit")
         })
      },
@@ -82,7 +82,7 @@ export default function Tenant(){
                 <div className="">
                     <TextField
                     fullWidth
-                    label="Full Name"
+                    label="Full Name" 
                     type="text"
                     placeholder="Enter Full Name"
                     id="fullName"

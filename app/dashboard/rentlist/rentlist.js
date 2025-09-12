@@ -12,18 +12,18 @@ export default function Rentlist(){
     const[tenant,setTenant]= React.useState([])
     const {data : session}= useSession()
     React.useEffect(()=>{
-        const fetchTenant = async ()=>{
-            try{
-                const q = query(
-                    collection(db,"tenant"),
-                    where("user","==",session?.user?.id),
+        const fetchTenant = async ()=>{ 
+            try{  
+                const q = query( 
+                    collection(db,"tenant"), 
+                    where("user","==",session?.user?.id), 
                 )
-                const snapShot = await getDocs(q)
-                const compileTenant =[];
-                snapShot.docs.forEach((doc)=>{
-                    compileTenant.push({
-                        id:doc.id,
-                        data: doc.data(),
+                const snapShot = await getDocs(q) 
+                const compileTenant =[]; 
+                snapShot.docs.forEach((doc)=>{ 
+                    compileTenant.push({ 
+                        id:doc.id,  
+                        data: doc.data(), 
                     })
                 })
                 setTenant(compileTenant)
@@ -41,7 +41,7 @@ export default function Rentlist(){
         <main className="min-h-screen mx-auto bg-gray-50 rounded-xl shadow-lg">
           <h1 className="text-3xl font-semi-bold text-center">Rent-List</h1>
           <p className="text-sm font-semibold text-center mt-2">Collection Of All Rent Paid</p>
-          <div className="grid grid-cols-1 md:grid md:grid-cols-2 lg:grid lg:grid-cols-3 ">
+          <div className="ml-15 grid grid-cols-1 md:grid md:grid-cols-2 lg:grid lg:grid-cols-3 ">
            {tenant.map(tenant =>(
            <div key={tenant.id}>
             <Image

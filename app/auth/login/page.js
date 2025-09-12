@@ -1,4 +1,5 @@
 
+
 import { auth, signIn } from "@/auth";
 import { TextField } from "@mui/material";
 import { FcGoogle } from "react-icons/fc";
@@ -8,6 +9,8 @@ import { FcGoogle } from "react-icons/fc";
 export default async function Login(){
      const session = await auth();
      console.log(session);
+    
+     
     return(
         <main className="min-h-screen flex justify-center bg-[url(/whitehouse1.avif)]  bg-cntain bg-no-repeat">
             <div className="w-120 mt-5 shadow">
@@ -24,10 +27,11 @@ export default async function Login(){
                 <h1 className="text-center mt-15">Or sign up with</h1>
                 </form>
                 <form 
-                action={async()=>{
-                    "use server"
-                    await signIn("google")
-                }}>
+                 action={async()=>{
+                     "use server"
+                     await signIn("google")
+                 }}>
+                    {/* onclick={()=>signIn("google")} */}
                 <div className="flex gap-2 justify-center mt-20 shadow mx-20 p-2 rounded">
                    <FcGoogle className="text-2xl"/> 
                    <button type="submit">Sign in with Google</button>

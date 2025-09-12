@@ -18,7 +18,7 @@ export default async function Profile(){
               <Image
               width={80}
               height={80}
-              src="/Imageman22.jpeg"
+              src={session?.user?.image}
               alt="profile-image"
               className="w-30 h-30 rounded-full mt-3"/>
             </div>
