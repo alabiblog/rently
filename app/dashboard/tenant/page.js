@@ -1,8 +1,6 @@
 import { auth } from "@/auth"
 import { AuthorizationCheck } from "@/config/authorization/check"
 import Tenant from "./tenant";
-Tenant
-
 
 
 

@@ -27,10 +27,10 @@ const schema = yup.object().shape({
 })
 
 
-export default async function Tenant(){ 
+export default   function Tenant(){ 
     const[open,setOpen]= useState(false)
      const {data : session}= useSession();
-     console.log(session)
+    //  console.log(session)
     const handleClose = ()=>{
         setOpen(false)
     }
