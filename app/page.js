@@ -5,7 +5,6 @@ import "swiper/css"
 import "swiper/css/pagination"
 import {Pagination, Autoplay} from "swiper/modules";
 import Image from "next/image";
-import Flip from "./components/flip/page";
 import Link from "next/link";
 
 
@@ -166,8 +165,7 @@ export default function Home(){
         <h1 className="text-5xl text-white font-semibold text-center py-5 border mx-100 bg-gray-400">ALABI<span className="text-5xl text-yellow-300 font-semibold">HOUSING</span></h1>
     
         <div className="flex justify-center gap-5 py-5">
-        <Flip/>
-        <Flip/>
+        
         </div>
        </div>
           <div className="bg-gray-200 h-70 reltive clip-wave">
