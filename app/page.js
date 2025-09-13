@@ -86,8 +86,6 @@ export default function Home(){
         </SwiperSlide>
        </Swiper>
         <div className="bg-[url(/Whitehouse2.avif)]  bg-cntain bg-no-repeat   md:block lg:block  md:flex md:justify-center md:gap-5 lg:flex lg:justify-center lg:gap-5">
-                    <button className="ml-13 text-sm mt-5 w-80 mx-7 text-white bg-gray-400 lg:text-xl shadow-lg rounded-xl p-2 lg:w-full  hover:opacity-40">Need a house to Rent<br/>Click Here To👇<br/><Link href={"/components/rent"}><span className="text-sm lg:text-2xl text-yellow-300">Speak To  Agent</span></Link></button>
-                    <button className="ml-13 text-sm mt-5 w-80 mx-7 text-white bg-gray-400 lg:text-xl shadow-lg rounded-xl p-2 lg:w-full hover:opacity-40">Need to Know the best location in Abuja<br/>Click Here To👇<br/><Link href={"/components/neighbourh"}><span className="text-sm lg:text-2xl text-yellow-300">Take A Tour</span></Link></button>
                 </div>
 
        <div className="flex-col-1 md:flex lg:flex">
