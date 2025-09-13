@@ -14,6 +14,7 @@ import { FaSliders } from "react-icons/fa6";
 
 
 
+
 const schema = yup.object().shape({
     fullName: yup.string().required("Full Name is required").min(2),
     phoneNumber: yup.string().required("Phone number  required"),

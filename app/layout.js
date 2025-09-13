@@ -5,10 +5,10 @@ import { Navbar } from "@/components/Navbar";
 import { SessionProvider } from "next-auth/react";
 
 export const Metadata = {
-title: "AlabiHousing",
+title: "Rently",
 description: "application werelandlord can be able to collect rent from tenenet and tenanat can be able to pay rent without stress",
 icons:{
-  icon: "/favocon.ico",
+  icon: "/favicon.ico",
 }
 }
 
@@ -27,7 +27,7 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata = {
-  title: "AlabiHousing",
+  title: "Rently",
   description: "application were landload and tenent interact about house rent",
 };
 
