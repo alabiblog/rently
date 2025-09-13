@@ -30,10 +30,10 @@ const schema = yup.object().shape({
 export default   function Tenant(){ 
     const[open,setOpen]= useState(false)
      const {data : session}= useSession();
-    //  console.log(session)
-    const handleClose = ()=>{
-        setOpen(false)
-    }
+     
+    //   const handleClose = ()=>{
+    //       setOpen(false)
+    //  }
     const{handleBlur,handleChange,handleSubmit,touched,errors,values}=useFormik({
       initialValues: {
         fullName: "",
@@ -193,13 +193,13 @@ export default   function Tenant(){
 
                </div>
             </form>
-            <Dialog open={open} onClose={handleClose}>
+            <Dialog open={open} onClick={()=>setOpen(false)}>
                 <DialogTitle>Successfully</DialogTitle>
                 <DialogContent>
                     <Typography>Tenant Added Successfully</Typography>
                 </DialogContent>
                 <DialogActions>
-                    <Button onClick={handleClose} color="primary" variant="contained" autoFocus>
+                    <Button onClick={()=>setOpen(false)} color="primary" variant="contained" autoFocus>
                         Close
                     </Button>
                 </DialogActions>
