@@ -4,7 +4,13 @@ import { Footer } from "@/components/Footer";
 import { Navbar } from "@/components/Navbar";
 import { SessionProvider } from "next-auth/react";
 
-
+export const Metadata = {
+title: "AlabiHousing",
+description: "application werelandlord can be able to collect rent from tenenet and tenanat can be able to pay rent without stress",
+icons:{
+  icon: "/favocon.ico",
+}
+}
 
 
 
@@ -21,7 +27,7 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata = {
-  title: "alabi",
+  title: "AlabiHousing",
   description: "application were landload and tenent interact about house rent",
 };
 

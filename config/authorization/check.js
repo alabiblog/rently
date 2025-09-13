@@ -3,8 +3,13 @@ import {redirect} from "next/navigation"
 
 
 export async function AuthorizationCheck(){
-    const session = await auth()
+     const session = await auth()
     if(!session?.user){
         redirect("/auth/login")
     }
+   return(
+    <main>
+
+    </main>
+   )
 }
